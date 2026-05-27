@@ -16,7 +16,7 @@ class ARC4:
         for n in range(len(data)):
             self.i = (self.i + 1) % 256
             self.j = (self.j + self.state[self.i]) % 256
-            self.state[self.i], self.state[self.j] = self.state[self.j], self.state[i]
+            self.state[self.i], self.state[self.j] = self.state[self.j], self.state[self.i]
             out.append(data[n] ^ self.state[(self.state[self.i] + self.state[self.j]) % 256])
         return bytes(out)
 
