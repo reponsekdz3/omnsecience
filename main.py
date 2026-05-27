@@ -3,12 +3,29 @@ import sys
 import os
 import time
 
-# Load impacket from local source path
-_local_impacket_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'impacket_src', 'impacket-0.13.0')
-if os.path.isdir(_local_impacket_path) and _local_impacket_path not in sys.path:
-    sys.path.insert(0, _local_impacket_path)
+# Load impacket from local source path (force correct import target)
+_repo_root = os.path.dirname(os.path.abspath(__file__))
+_local_impacket_parent = os.path.join(_repo_root, 'impacket_src', 'impacket-0.13.0')
+if os.path.isdir(_local_impacket_parent) and _local_impacket_parent not in sys.path:
+    sys.path.insert(0, _local_impacket_parent)
+
+# If a conflicting top-level namespace package (./impacket/) was already imported,
+# remove it so subsequent imports resolve to ./impacket_src/impacket-0.13.0/impacket.
+try:
+    import impacket as _impacket_mod  # noqa: F401
+    _impacket_paths = list(getattr(_impacket_mod, '__path__', []))
+    _preferred = os.path.join(_local_impacket_parent, 'impacket') if os.path.isdir(_local_impacket_parent) else None
+    if _preferred and _preferred not in _impacket_paths:
+        for m in list(sys.modules.keys()):
+            if m == 'impacket' or m.startswith('impacket.'):
+                sys.modules.pop(m, None)
+        import importlib
+        importlib.invalidate_caches()
+except Exception:
+    pass
 
 from commandcenter import OmniShell
+
 
 def check_dependencies():
     """Verify core functional dependencies are installed."""

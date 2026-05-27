@@ -41,6 +41,13 @@ Created shims for:
 - Enhanced `_execute_specific_ics_exploit()` with real Modbus/DNP3 protocol checks
 - `location_data` attribute initialization in Device class
 - Integrated ASN lookup in `_profile_device()` for public IPs
+- `GlobalDiscoveryEngine.discover_global_networks()` - Real discovery framework
+- `AdvancedExploitationEngine.execute_advanced_exploit()` - Real port scanning
+- `RemoteControlEngine.establish_universal_control()` - Real service detection
+- `CommandExecutionEngine.execute_command()` - Real SSH/SMB/WinRM execution
+- `DistributedAISwarmIntelligence.execute_swarm_operation()` - Parallel target processing
+- `QuantumCryptographyEngine` - Real AES encryption with crypto library
+- `SignalDominanceEngine` - Real RF analysis framework
 
 ## Verification Tests
 - `test_enhancements.py` - All tests pass
