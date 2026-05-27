@@ -1,0 +1,1682 @@
+{
+  "192.168.0.2": {
+    "token": "71f519704f2e3ab4",
+    "timestamp": "2026-05-08T16:24:12.443426",
+    "hostname": "device-2.office",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.2"
+  },
+  "192.168.0.10": {
+    "token": "ce742118d0f54fd6",
+    "timestamp": "2026-05-08T15:33:17.400686",
+    "hostname": "device-10.office",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.10"
+  },
+  "192.168.0.7": {
+    "token": "141858531bc14d8a",
+    "timestamp": "2026-05-08T15:33:17.339476",
+    "hostname": "device-7.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.7"
+  },
+  "192.168.0.19": {
+    "token": "d9771e4388cf80e9",
+    "timestamp": "2026-05-08T15:33:17.483120",
+    "hostname": "device-19.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.19"
+  },
+  "192.168.0.29": {
+    "token": "b602690eef8ed27a",
+    "timestamp": "2026-05-08T15:33:17.522085",
+    "hostname": "device-29.office",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.29"
+  },
+  "192.168.0.32": {
+    "token": "dc6c6cc2fbd105c7",
+    "timestamp": "2026-05-08T15:33:17.606986",
+    "hostname": "device-32.local",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.32"
+  },
+  "192.168.0.37": {
+    "token": "c3cf83a64afab419",
+    "timestamp": "2026-05-08T15:33:17.655832",
+    "hostname": "device-37.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.37"
+  },
+  "192.168.0.43": {
+    "token": "f87338c6ac34a4c2",
+    "timestamp": "2026-05-08T15:33:17.699420",
+    "hostname": "device-43.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.43"
+  },
+  "192.168.0.47": {
+    "token": "44646af8b6a1b620",
+    "timestamp": "2026-05-08T15:33:17.746957",
+    "hostname": "device-47.office",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.47"
+  },
+  "192.168.0.50": {
+    "token": "51da9bec84b58275",
+    "timestamp": "2026-05-08T15:33:17.796610",
+    "hostname": "device-50.corp",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.50"
+  },
+  "192.168.0.56": {
+    "token": "04e824db47629994",
+    "timestamp": "2026-05-08T15:33:17.837626",
+    "hostname": "device-56.home",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.56"
+  },
+  "192.168.0.67": {
+    "token": "ab7bc45986dbd0e2",
+    "timestamp": "2026-05-08T15:33:17.879122",
+    "hostname": "device-67.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.0.67"
+  },
+  "192.168.0.69": {
+    "token": "7e0997dd2efbfb26",
+    "timestamp": "2026-05-08T15:33:17.926370",
+    "hostname": "device-69.local",
+    "os_info": "Android 14",
+    "ip": "192.168.0.69"
+  },
+  "192.168.0.72": {
+    "token": "3e8a8b187bf2157e",
+    "timestamp": "2026-05-08T15:33:17.967879",
+    "hostname": "device-72.home",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.72"
+  },
+  "192.168.0.78": {
+    "token": "bd2bfd451c8e1bba",
+    "timestamp": "2026-05-08T15:33:18.015260",
+    "hostname": "device-78.office",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.78"
+  },
+  "192.168.0.81": {
+    "token": "cf94bd22c68a3d54",
+    "timestamp": "2026-05-08T15:33:18.052100",
+    "hostname": "device-81.home",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.81"
+  },
+  "192.168.0.86": {
+    "token": "a4087733edc0589f",
+    "timestamp": "2026-05-08T15:33:18.093745",
+    "hostname": "device-86.corp",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.86"
+  },
+  "192.168.0.87": {
+    "token": "f8ddfeb39df45561",
+    "timestamp": "2026-05-08T15:33:18.124985",
+    "hostname": "device-87.home",
+    "os_info": "Android 14",
+    "ip": "192.168.0.87"
+  },
+  "192.168.0.88": {
+    "token": "b138576e4e66078e",
+    "timestamp": "2026-05-08T15:33:18.157576",
+    "hostname": "device-88.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.88"
+  },
+  "192.168.0.89": {
+    "token": "48acfa97ede6a937",
+    "timestamp": "2026-05-08T15:33:18.189180",
+    "hostname": "device-89.lan",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.89"
+  },
+  "192.168.0.96": {
+    "token": "643b1e85efd02dc0",
+    "timestamp": "2026-05-08T15:33:18.321603",
+    "hostname": "device-96.corp",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.96"
+  },
+  "192.168.0.100": {
+    "token": "65fa231e8ff0b3e2",
+    "timestamp": "2026-05-08T15:33:18.423831",
+    "hostname": "device-100.home",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.100"
+  },
+  "192.168.0.108": {
+    "token": "388a3041ec9178cb",
+    "timestamp": "2026-05-08T15:33:18.455522",
+    "hostname": "device-108.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.0.108"
+  },
+  "192.168.0.113": {
+    "token": "6d26ef13f1c2c192",
+    "timestamp": "2026-05-08T15:33:18.484642",
+    "hostname": "device-113.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.113"
+  },
+  "192.168.0.114": {
+    "token": "fd06641f5cf4b3b0",
+    "timestamp": "2026-05-08T15:33:18.516085",
+    "hostname": "device-114.home",
+    "os_info": "Android 14",
+    "ip": "192.168.0.114"
+  },
+  "192.168.0.116": {
+    "token": "adcf12339c7e0f87",
+    "timestamp": "2026-05-08T15:33:18.550561",
+    "hostname": "device-116.local",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.116"
+  },
+  "192.168.0.122": {
+    "token": "ae1ed62ea95586a4",
+    "timestamp": "2026-05-08T15:33:18.588613",
+    "hostname": "device-122.local",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.122"
+  },
+  "192.168.0.139": {
+    "token": "f872a71b30f818bc",
+    "timestamp": "2026-05-08T15:33:18.624660",
+    "hostname": "device-139.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.0.139"
+  },
+  "192.168.0.143": {
+    "token": "6d57f21332c31623",
+    "timestamp": "2026-05-08T16:08:32.177135",
+    "hostname": "device-143.home",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.143"
+  },
+  "192.168.0.144": {
+    "token": "8864edadd4908f60",
+    "timestamp": "2026-05-08T15:33:18.713257",
+    "hostname": "device-144.corp",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.144"
+  },
+  "192.168.0.145": {
+    "token": "52d400d58dae9c22",
+    "timestamp": "2026-05-08T15:33:18.754825",
+    "hostname": "device-145.lan",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.145"
+  },
+  "192.168.0.150": {
+    "token": "88c641ce79a02bf6",
+    "timestamp": "2026-05-08T15:33:18.792044",
+    "hostname": "device-150.home",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.150"
+  },
+  "192.168.0.154": {
+    "token": "b308c778b3b71d3a",
+    "timestamp": "2026-05-08T15:33:18.837529",
+    "hostname": "device-154.local",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.154"
+  },
+  "192.168.0.163": {
+    "token": "9dd0bfd130f7b5a7",
+    "timestamp": "2026-05-08T15:33:18.876200",
+    "hostname": "device-163.corp",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.163"
+  },
+  "192.168.0.167": {
+    "token": "b2cd5d251ffe8ef4",
+    "timestamp": "2026-05-08T15:33:18.909348",
+    "hostname": "device-167.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.167"
+  },
+  "192.168.0.168": {
+    "token": "4ba91eee87c12964",
+    "timestamp": "2026-05-08T15:33:18.950636",
+    "hostname": "device-168.local",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.168"
+  },
+  "192.168.0.169": {
+    "token": "7dc9418e75644f3c",
+    "timestamp": "2026-05-08T15:33:18.985873",
+    "hostname": "device-169.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.169"
+  },
+  "192.168.0.171": {
+    "token": "7863ca1019d52a5e",
+    "timestamp": "2026-05-08T15:33:19.038861",
+    "hostname": "device-171.office",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.171"
+  },
+  "192.168.0.172": {
+    "token": "5217497391445db3",
+    "timestamp": "2026-05-08T15:33:19.072955",
+    "hostname": "device-172.office",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.172"
+  },
+  "192.168.0.175": {
+    "token": "73afc80655939044",
+    "timestamp": "2026-05-08T15:33:19.110274",
+    "hostname": "device-175.office",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.175"
+  },
+  "192.168.0.182": {
+    "token": "a7719d1084c6fff6",
+    "timestamp": "2026-05-08T15:33:19.149626",
+    "hostname": "device-182.local",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.182"
+  },
+  "192.168.0.183": {
+    "token": "194f454426471638",
+    "timestamp": "2026-05-08T15:33:19.187441",
+    "hostname": "device-183.local",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.183"
+  },
+  "192.168.0.186": {
+    "token": "3edad6b97ab83ef9",
+    "timestamp": "2026-05-08T15:33:19.235110",
+    "hostname": "device-186.office",
+    "os_info": "Android 14",
+    "ip": "192.168.0.186"
+  },
+  "192.168.0.190": {
+    "token": "24634b8c34041bfd",
+    "timestamp": "2026-05-08T15:33:19.267860",
+    "hostname": "device-190.home",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.190"
+  },
+  "192.168.0.198": {
+    "token": "9b9d08be2abc3192",
+    "timestamp": "2026-05-08T15:33:19.306603",
+    "hostname": "device-198.corp",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.198"
+  },
+  "192.168.0.199": {
+    "token": "001b278308e07110",
+    "timestamp": "2026-05-08T15:33:19.337626",
+    "hostname": "device-199.local",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.199"
+  },
+  "192.168.0.203": {
+    "token": "8ca2cca32141cc5e",
+    "timestamp": "2026-05-08T15:33:19.373044",
+    "hostname": "device-203.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.203"
+  },
+  "192.168.0.205": {
+    "token": "153650ae0a678288",
+    "timestamp": "2026-05-08T15:33:19.406166",
+    "hostname": "device-205.lan",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.205"
+  },
+  "192.168.0.213": {
+    "token": "e764d6303aa36c1e",
+    "timestamp": "2026-05-08T15:33:19.450221",
+    "hostname": "device-213.local",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.213"
+  },
+  "192.168.0.216": {
+    "token": "dffa55cf8eb34d2a",
+    "timestamp": "2026-05-08T15:33:19.497966",
+    "hostname": "device-216.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.216"
+  },
+  "192.168.0.220": {
+    "token": "8ff2777430b8fd8b",
+    "timestamp": "2026-05-08T15:33:19.541925",
+    "hostname": "device-220.home",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.220"
+  },
+  "192.168.0.221": {
+    "token": "e8b37e5adab024f4",
+    "timestamp": "2026-05-08T15:33:19.616189",
+    "hostname": "device-221.lan",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.221"
+  },
+  "192.168.0.227": {
+    "token": "f2040ba2deab9139",
+    "timestamp": "2026-05-08T15:33:19.662979",
+    "hostname": "device-227.home",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.227"
+  },
+  "192.168.0.229": {
+    "token": "3725b7fac2868156",
+    "timestamp": "2026-05-08T15:33:19.719396",
+    "hostname": "device-229.corp",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.229"
+  },
+  "192.168.0.230": {
+    "token": "a4bf8611880a1088",
+    "timestamp": "2026-05-08T15:33:19.756533",
+    "hostname": "device-230.office",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.230"
+  },
+  "192.168.0.231": {
+    "token": "78672922fec621a4",
+    "timestamp": "2026-05-08T15:33:19.799290",
+    "hostname": "device-231.lan",
+    "os_info": "Android 14",
+    "ip": "192.168.0.231"
+  },
+  "192.168.0.232": {
+    "token": "5972ed7ca952c348",
+    "timestamp": "2026-05-08T15:33:19.851782",
+    "hostname": "device-232.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.232"
+  },
+  "192.168.0.236": {
+    "token": "9defed87c1c73f1d",
+    "timestamp": "2026-05-08T15:33:19.904587",
+    "hostname": "device-236.lan",
+    "os_info": "Android 14",
+    "ip": "192.168.0.236"
+  },
+  "192.168.0.237": {
+    "token": "d13b34a4e8ac07f6",
+    "timestamp": "2026-05-08T15:33:19.938787",
+    "hostname": "device-237.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.0.237"
+  },
+  "192.168.0.244": {
+    "token": "a5252b10c710e033",
+    "timestamp": "2026-05-08T15:33:19.974097",
+    "hostname": "device-244.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.244"
+  },
+  "192.168.0.245": {
+    "token": "abb2a58d3fc3b29d",
+    "timestamp": "2026-05-08T15:33:20.009482",
+    "hostname": "device-245.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.245"
+  },
+  "192.168.0.249": {
+    "token": "7d640d5e4145bb8b",
+    "timestamp": "2026-05-08T15:33:20.054263",
+    "hostname": "device-249.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.249"
+  },
+  "192.168.0.250": {
+    "token": "780ec57252b917be",
+    "timestamp": "2026-05-08T15:33:20.107856",
+    "hostname": "device-250.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.250"
+  },
+  "192.168.1.9": {
+    "token": "e290807b9d24aecc",
+    "timestamp": "2026-05-08T15:33:20.149970",
+    "hostname": "device-9.local",
+    "os_info": "Android 14",
+    "ip": "192.168.1.9"
+  },
+  "192.168.1.11": {
+    "token": "33d75e6f3ae6f122",
+    "timestamp": "2026-05-08T15:33:20.192129",
+    "hostname": "device-11.lan",
+    "os_info": "Windows 11",
+    "ip": "192.168.1.11"
+  },
+  "192.168.1.12": {
+    "token": "2d2f37c938fa7ef7",
+    "timestamp": "2026-05-08T15:33:20.232917",
+    "hostname": "device-12.lan",
+    "os_info": "Android 14",
+    "ip": "192.168.1.12"
+  },
+  "192.168.1.16": {
+    "token": "0ac3039e86bb47e4",
+    "timestamp": "2026-05-08T15:33:20.271210",
+    "hostname": "device-16.corp",
+    "os_info": "macOS 14",
+    "ip": "192.168.1.16"
+  },
+  "192.168.1.17": {
+    "token": "5dbeca0ea7f790ba",
+    "timestamp": "2026-05-08T15:33:20.311999",
+    "hostname": "device-17.lan",
+    "os_info": "Android 14",
+    "ip": "192.168.1.17"
+  },
+  "192.168.1.29": {
+    "token": "493c374c03f5c7f1",
+    "timestamp": "2026-05-08T15:33:20.352893",
+    "hostname": "device-29.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.29"
+  },
+  "192.168.1.32": {
+    "token": "7ba6d37db962b4ad",
+    "timestamp": "2026-05-08T15:33:20.393922",
+    "hostname": "device-32.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.32"
+  },
+  "192.168.1.33": {
+    "token": "d8426c0935133265",
+    "timestamp": "2026-05-08T15:33:20.435585",
+    "hostname": "device-33.corp",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.33"
+  },
+  "192.168.1.37": {
+    "token": "f57ccc6df5fc02c5",
+    "timestamp": "2026-05-08T15:33:20.479590",
+    "hostname": "device-37.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.1.37"
+  },
+  "192.168.1.42": {
+    "token": "1880833e66c502b3",
+    "timestamp": "2026-05-08T15:33:20.532437",
+    "hostname": "device-42.corp",
+    "os_info": "Windows 11",
+    "ip": "192.168.1.42"
+  },
+  "192.168.1.44": {
+    "token": "eb76fdb85aa1d6da",
+    "timestamp": "2026-05-08T15:33:20.577465",
+    "hostname": "device-44.lan",
+    "os_info": "Android 14",
+    "ip": "192.168.1.44"
+  },
+  "192.168.1.61": {
+    "token": "5e4023949f31cc5e",
+    "timestamp": "2026-05-08T15:33:20.617839",
+    "hostname": "device-61.local",
+    "os_info": "Android 14",
+    "ip": "192.168.1.61"
+  },
+  "192.168.1.69": {
+    "token": "a6bb578889d52212",
+    "timestamp": "2026-05-08T15:33:20.655153",
+    "hostname": "device-69.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.69"
+  },
+  "192.168.1.71": {
+    "token": "83cdf670fc40faa2",
+    "timestamp": "2026-05-08T15:33:20.694222",
+    "hostname": "device-71.office",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.71"
+  },
+  "192.168.1.75": {
+    "token": "d4225734f85f7e01",
+    "timestamp": "2026-05-08T15:33:20.738395",
+    "hostname": "device-75.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.75"
+  },
+  "192.168.1.81": {
+    "token": "fe744e7c0a220aa1",
+    "timestamp": "2026-05-08T15:33:20.772810",
+    "hostname": "device-81.home",
+    "os_info": "iOS 17",
+    "ip": "192.168.1.81"
+  },
+  "192.168.1.87": {
+    "token": "ac6cf020955b77fc",
+    "timestamp": "2026-05-08T15:33:20.808820",
+    "hostname": "device-87.corp",
+    "os_info": "macOS 14",
+    "ip": "192.168.1.87"
+  },
+  "192.168.1.89": {
+    "token": "b949d13482faeefd",
+    "timestamp": "2026-05-08T15:33:20.846249",
+    "hostname": "device-89.home",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.89"
+  },
+  "192.168.1.93": {
+    "token": "0dea190dc826384c",
+    "timestamp": "2026-05-08T15:33:20.888750",
+    "hostname": "device-93.local",
+    "os_info": "Android 14",
+    "ip": "192.168.1.93"
+  },
+  "192.168.1.97": {
+    "token": "161ee6c02c4ab21d",
+    "timestamp": "2026-05-08T15:33:20.934566",
+    "hostname": "device-97.corp",
+    "os_info": "iOS 17",
+    "ip": "192.168.1.97"
+  },
+  "192.168.1.102": {
+    "token": "82334c209b39d548",
+    "timestamp": "2026-05-08T15:33:20.978621",
+    "hostname": "device-102.home",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.102"
+  },
+  "192.168.1.103": {
+    "token": "124e60a2de3258f5",
+    "timestamp": "2026-05-08T15:33:21.020860",
+    "hostname": "device-103.local",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.103"
+  },
+  "192.168.1.106": {
+    "token": "bda062201cb83cb2",
+    "timestamp": "2026-05-08T15:33:21.067887",
+    "hostname": "device-106.home",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.106"
+  },
+  "192.168.1.110": {
+    "token": "0700f630f5a2b6c6",
+    "timestamp": "2026-05-08T15:33:21.125428",
+    "hostname": "device-110.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.1.110"
+  },
+  "192.168.1.112": {
+    "token": "de44835f352b8ac9",
+    "timestamp": "2026-05-08T15:33:21.168613",
+    "hostname": "device-112.office",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.112"
+  },
+  "192.168.1.115": {
+    "token": "8fd42452c5afeb2e",
+    "timestamp": "2026-05-08T15:33:21.206978",
+    "hostname": "device-115.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.115"
+  },
+  "192.168.1.117": {
+    "token": "cad932379ee818d2",
+    "timestamp": "2026-05-08T15:33:21.255038",
+    "hostname": "device-117.home",
+    "os_info": "Android 14",
+    "ip": "192.168.1.117"
+  },
+  "192.168.1.120": {
+    "token": "1bddc5393aef7aa8",
+    "timestamp": "2026-05-08T15:33:21.295423",
+    "hostname": "device-120.office",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.120"
+  },
+  "192.168.1.124": {
+    "token": "124ad554a789045a",
+    "timestamp": "2026-05-08T15:33:21.339263",
+    "hostname": "device-124.local",
+    "os_info": "iOS 17",
+    "ip": "192.168.1.124"
+  },
+  "192.168.1.127": {
+    "token": "bf1697e8adb6a3ff",
+    "timestamp": "2026-05-08T15:33:21.390296",
+    "hostname": "device-127.local",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.127"
+  },
+  "192.168.1.128": {
+    "token": "b7e06a4ad5297c55",
+    "timestamp": "2026-05-08T15:33:21.438196",
+    "hostname": "device-128.office",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.128"
+  },
+  "192.168.1.129": {
+    "token": "f008b47721cac923",
+    "timestamp": "2026-05-08T15:33:21.479217",
+    "hostname": "device-129.local",
+    "os_info": "macOS 14",
+    "ip": "192.168.1.129"
+  },
+  "192.168.1.133": {
+    "token": "03dec3d34638e3a1",
+    "timestamp": "2026-05-08T15:33:21.524446",
+    "hostname": "device-133.office",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.133"
+  },
+  "192.168.1.135": {
+    "token": "5cc28677b2ebf705",
+    "timestamp": "2026-05-08T15:33:21.567188",
+    "hostname": "device-135.local",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.135"
+  },
+  "192.168.1.137": {
+    "token": "7db5040021998e17",
+    "timestamp": "2026-05-08T15:33:21.621297",
+    "hostname": "device-137.lan",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.137"
+  },
+  "192.168.1.138": {
+    "token": "c11bb9cc908ff28b",
+    "timestamp": "2026-05-08T15:33:21.659649",
+    "hostname": "device-138.lan",
+    "os_info": "macOS 14",
+    "ip": "192.168.1.138"
+  },
+  "192.168.1.140": {
+    "token": "2f11b49cb4b51ebd",
+    "timestamp": "2026-05-08T15:33:21.702778",
+    "hostname": "device-140.corp",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.140"
+  },
+  "192.168.1.142": {
+    "token": "ea9432aee31773ad",
+    "timestamp": "2026-05-08T15:33:21.751358",
+    "hostname": "device-142.home",
+    "os_info": "Android 14",
+    "ip": "192.168.1.142"
+  },
+  "192.168.1.143": {
+    "token": "08065ad08c5e496c",
+    "timestamp": "2026-05-08T15:33:21.787534",
+    "hostname": "device-143.lan",
+    "os_info": "iOS 17",
+    "ip": "192.168.1.143"
+  },
+  "192.168.1.150": {
+    "token": "151bdef5214adfac",
+    "timestamp": "2026-05-08T15:33:21.831166",
+    "hostname": "device-150.office",
+    "os_info": "Windows 11",
+    "ip": "192.168.1.150"
+  },
+  "192.168.1.160": {
+    "token": "1c8bb4ec58b24174",
+    "timestamp": "2026-05-08T15:33:21.873581",
+    "hostname": "device-160.corp",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.160"
+  },
+  "192.168.1.162": {
+    "token": "66e4707bdf8088da",
+    "timestamp": "2026-05-08T15:33:21.918713",
+    "hostname": "device-162.office",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.162"
+  },
+  "192.168.1.163": {
+    "token": "b45edd1def5e7161",
+    "timestamp": "2026-05-08T15:33:21.969548",
+    "hostname": "device-163.local",
+    "os_info": "iOS 17",
+    "ip": "192.168.1.163"
+  },
+  "192.168.1.164": {
+    "token": "9082e4fca14e5de0",
+    "timestamp": "2026-05-08T15:33:22.012244",
+    "hostname": "device-164.office",
+    "os_info": "Android 14",
+    "ip": "192.168.1.164"
+  },
+  "192.168.1.166": {
+    "token": "0af66a519299e389",
+    "timestamp": "2026-05-08T15:33:22.061240",
+    "hostname": "device-166.lan",
+    "os_info": "Android 14",
+    "ip": "192.168.1.166"
+  },
+  "192.168.1.171": {
+    "token": "827cc2f831649bec",
+    "timestamp": "2026-05-08T15:33:22.111683",
+    "hostname": "device-171.lan",
+    "os_info": "Windows 11",
+    "ip": "192.168.1.171"
+  },
+  "192.168.1.172": {
+    "token": "5946ee2b690b68e9",
+    "timestamp": "2026-05-08T15:33:22.153635",
+    "hostname": "device-172.home",
+    "os_info": "Windows 11",
+    "ip": "192.168.1.172"
+  },
+  "192.168.1.180": {
+    "token": "a8aef57c8e9fe6de",
+    "timestamp": "2026-05-08T15:33:22.192398",
+    "hostname": "device-180.local",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.180"
+  },
+  "192.168.1.183": {
+    "token": "11b789cd12864e1b",
+    "timestamp": "2026-05-08T15:33:22.225182",
+    "hostname": "device-183.home",
+    "os_info": "macOS 14",
+    "ip": "192.168.1.183"
+  },
+  "192.168.1.185": {
+    "token": "de76b0913af2150e",
+    "timestamp": "2026-05-08T15:33:22.282362",
+    "hostname": "device-185.corp",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.185"
+  },
+  "192.168.1.189": {
+    "token": "cf5c668014045c0f",
+    "timestamp": "2026-05-08T15:33:22.316003",
+    "hostname": "device-189.home",
+    "os_info": "macOS 14",
+    "ip": "192.168.1.189"
+  },
+  "192.168.1.190": {
+    "token": "13cc7d69e46f92b1",
+    "timestamp": "2026-05-08T15:33:22.349497",
+    "hostname": "device-190.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.190"
+  },
+  "192.168.1.197": {
+    "token": "a675c4d5364123b4",
+    "timestamp": "2026-05-08T15:33:22.390685",
+    "hostname": "device-197.corp",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.197"
+  },
+  "192.168.1.199": {
+    "token": "90d377ba0830e1b6",
+    "timestamp": "2026-05-08T15:33:22.458619",
+    "hostname": "device-199.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.1.199"
+  },
+  "192.168.1.202": {
+    "token": "db5426fbb379368f",
+    "timestamp": "2026-05-08T15:33:22.521462",
+    "hostname": "device-202.local",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.202"
+  },
+  "192.168.1.209": {
+    "token": "6144f5519f8f19f8",
+    "timestamp": "2026-05-08T15:33:22.569122",
+    "hostname": "device-209.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.1.209"
+  },
+  "192.168.1.211": {
+    "token": "86633e31295b279b",
+    "timestamp": "2026-05-08T15:33:22.623329",
+    "hostname": "device-211.local",
+    "os_info": "Windows 11",
+    "ip": "192.168.1.211"
+  },
+  "192.168.1.220": {
+    "token": "1e8d53e96b1e156a",
+    "timestamp": "2026-05-08T15:33:22.666944",
+    "hostname": "device-220.local",
+    "os_info": "macOS 14",
+    "ip": "192.168.1.220"
+  },
+  "192.168.1.225": {
+    "token": "7c4d228aad1e75fc",
+    "timestamp": "2026-05-08T15:33:22.721063",
+    "hostname": "device-225.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.1.225"
+  },
+  "192.168.1.228": {
+    "token": "b31b7a361977908a",
+    "timestamp": "2026-05-08T15:33:22.764804",
+    "hostname": "device-228.lan",
+    "os_info": "iOS 17",
+    "ip": "192.168.1.228"
+  },
+  "192.168.1.229": {
+    "token": "576b5a9e22fdf917",
+    "timestamp": "2026-05-08T15:33:22.808283",
+    "hostname": "device-229.office",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.229"
+  },
+  "192.168.1.236": {
+    "token": "20f55d464311c59a",
+    "timestamp": "2026-05-08T15:33:22.848186",
+    "hostname": "device-236.corp",
+    "os_info": "Windows 11",
+    "ip": "192.168.1.236"
+  },
+  "192.168.1.240": {
+    "token": "45cf9d217e6b3e86",
+    "timestamp": "2026-05-08T15:33:22.887046",
+    "hostname": "device-240.corp",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.240"
+  },
+  "192.168.1.249": {
+    "token": "19f4aaf37ae39d4a",
+    "timestamp": "2026-05-08T15:33:22.933559",
+    "hostname": "device-249.lan",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.1.249"
+  },
+  "192.168.1.251": {
+    "token": "9ab24e797382989a",
+    "timestamp": "2026-05-08T15:33:22.972987",
+    "hostname": "device-251.local",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.1.251"
+  },
+  "192.168.1.254": {
+    "token": "a8b18a839ac4a22d",
+    "timestamp": "2026-05-08T15:33:23.026439",
+    "hostname": "device-254.local",
+    "os_info": "macOS 14",
+    "ip": "192.168.1.254"
+  },
+  "10.0.0.3": {
+    "token": "4e4e1f09c8dcd892",
+    "timestamp": "2026-05-08T15:33:23.069528",
+    "hostname": "device-3.lan",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.3"
+  },
+  "10.0.0.4": {
+    "token": "2624abe01a8eeb68",
+    "timestamp": "2026-05-08T15:33:23.126885",
+    "hostname": "device-4.local",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.4"
+  },
+  "10.0.0.7": {
+    "token": "958a58705ab228b7",
+    "timestamp": "2026-05-08T15:33:23.169789",
+    "hostname": "device-7.office",
+    "os_info": "Android 14",
+    "ip": "10.0.0.7"
+  },
+  "10.0.0.13": {
+    "token": "81741b8de6c124e4",
+    "timestamp": "2026-05-08T15:33:23.206605",
+    "hostname": "device-13.home",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.13"
+  },
+  "10.0.0.14": {
+    "token": "e78cd02c2fc4d165",
+    "timestamp": "2026-05-08T15:33:23.247177",
+    "hostname": "device-14.corp",
+    "os_info": "Unknown IoT",
+    "ip": "10.0.0.14"
+  },
+  "10.0.0.23": {
+    "token": "9b9e0cc68000abe2",
+    "timestamp": "2026-05-08T15:33:23.287732",
+    "hostname": "device-23.home",
+    "os_info": "Android 14",
+    "ip": "10.0.0.23"
+  },
+  "10.0.0.28": {
+    "token": "7b8f74b4cd0ab39a",
+    "timestamp": "2026-05-08T15:33:23.334690",
+    "hostname": "device-28.home",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.28"
+  },
+  "10.0.0.47": {
+    "token": "6c3033f56541ddd7",
+    "timestamp": "2026-05-08T15:33:23.373345",
+    "hostname": "device-47.office",
+    "os_info": "Android 14",
+    "ip": "10.0.0.47"
+  },
+  "10.0.0.51": {
+    "token": "b12f599a142cd4f1",
+    "timestamp": "2026-05-08T15:33:23.421533",
+    "hostname": "device-51.home",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.51"
+  },
+  "10.0.0.54": {
+    "token": "c6bfb5fc128371d3",
+    "timestamp": "2026-05-08T15:33:23.459406",
+    "hostname": "device-54.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "10.0.0.54"
+  },
+  "10.0.0.55": {
+    "token": "67ad1db1f247a034",
+    "timestamp": "2026-05-08T15:33:23.497107",
+    "hostname": "device-55.corp",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.55"
+  },
+  "10.0.0.59": {
+    "token": "26293c7ef443a0bb",
+    "timestamp": "2026-05-08T15:33:23.542754",
+    "hostname": "device-59.lan",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.59"
+  },
+  "10.0.0.61": {
+    "token": "6d1da99b33739d9a",
+    "timestamp": "2026-05-08T15:33:23.584133",
+    "hostname": "device-61.local",
+    "os_info": "Android 14",
+    "ip": "10.0.0.61"
+  },
+  "10.0.0.62": {
+    "token": "530d6802d813871a",
+    "timestamp": "2026-05-08T15:33:23.644487",
+    "hostname": "device-62.office",
+    "os_info": "Windows Server 2022",
+    "ip": "10.0.0.62"
+  },
+  "10.0.0.66": {
+    "token": "fc7909c1479da026",
+    "timestamp": "2026-05-08T15:33:23.758532",
+    "hostname": "device-66.local",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.66"
+  },
+  "10.0.0.77": {
+    "token": "03a32562cf925c78",
+    "timestamp": "2026-05-08T15:33:23.815185",
+    "hostname": "device-77.office",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.77"
+  },
+  "10.0.0.78": {
+    "token": "ed4a428d1cb7a1f4",
+    "timestamp": "2026-05-08T15:33:23.867686",
+    "hostname": "device-78.local",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.78"
+  },
+  "10.0.0.80": {
+    "token": "fcc08f0e0d95091a",
+    "timestamp": "2026-05-08T15:33:23.929099",
+    "hostname": "device-80.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.80"
+  },
+  "10.0.0.81": {
+    "token": "116631699cea2d91",
+    "timestamp": "2026-05-08T15:33:23.967458",
+    "hostname": "device-81.local",
+    "os_info": "Android 14",
+    "ip": "10.0.0.81"
+  },
+  "10.0.0.87": {
+    "token": "ce11b88b3b132662",
+    "timestamp": "2026-05-08T15:33:24.015741",
+    "hostname": "device-87.corp",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.87"
+  },
+  "10.0.0.92": {
+    "token": "be54afb525b73fef",
+    "timestamp": "2026-05-08T15:33:24.060024",
+    "hostname": "device-92.office",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.92"
+  },
+  "10.0.0.99": {
+    "token": "67c8f62666cc98b3",
+    "timestamp": "2026-05-08T15:33:24.100462",
+    "hostname": "device-99.local",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.99"
+  },
+  "10.0.0.101": {
+    "token": "d4e13174ceb83818",
+    "timestamp": "2026-05-08T15:33:24.142277",
+    "hostname": "device-101.office",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.101"
+  },
+  "10.0.0.105": {
+    "token": "78981b13c17c1abb",
+    "timestamp": "2026-05-08T15:33:24.193782",
+    "hostname": "device-105.corp",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.105"
+  },
+  "10.0.0.114": {
+    "token": "e72520acbf4bcd76",
+    "timestamp": "2026-05-08T15:33:24.248563",
+    "hostname": "device-114.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "10.0.0.114"
+  },
+  "10.0.0.115": {
+    "token": "384a6ef0ddad4a8d",
+    "timestamp": "2026-05-08T15:33:24.288870",
+    "hostname": "device-115.home",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.115"
+  },
+  "10.0.0.123": {
+    "token": "2f681b2f4a1f79b5",
+    "timestamp": "2026-05-08T15:33:24.327586",
+    "hostname": "device-123.office",
+    "os_info": "Android 14",
+    "ip": "10.0.0.123"
+  },
+  "10.0.0.124": {
+    "token": "c7bd306856216787",
+    "timestamp": "2026-05-08T15:33:24.367273",
+    "hostname": "device-124.lan",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.124"
+  },
+  "10.0.0.131": {
+    "token": "a9ed54e55c1370ff",
+    "timestamp": "2026-05-08T15:33:24.409531",
+    "hostname": "device-131.office",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.131"
+  },
+  "10.0.0.135": {
+    "token": "e3ada68ade71cd7c",
+    "timestamp": "2026-05-08T15:33:24.445932",
+    "hostname": "device-135.corp",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.135"
+  },
+  "10.0.0.146": {
+    "token": "f9cb87e665172415",
+    "timestamp": "2026-05-08T15:33:24.479719",
+    "hostname": "device-146.office",
+    "os_info": "Android 14",
+    "ip": "10.0.0.146"
+  },
+  "10.0.0.149": {
+    "token": "dbcee8dc7cb5166d",
+    "timestamp": "2026-05-08T15:33:24.515098",
+    "hostname": "device-149.corp",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.149"
+  },
+  "10.0.0.150": {
+    "token": "af9626813c55f999",
+    "timestamp": "2026-05-08T15:33:24.549067",
+    "hostname": "device-150.corp",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.150"
+  },
+  "10.0.0.151": {
+    "token": "b7f9d6d0d1fdce22",
+    "timestamp": "2026-05-08T15:33:24.588580",
+    "hostname": "device-151.office",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.151"
+  },
+  "10.0.0.153": {
+    "token": "52fb1da93f074cc4",
+    "timestamp": "2026-05-08T15:33:24.625680",
+    "hostname": "device-153.lan",
+    "os_info": "Windows Server 2022",
+    "ip": "10.0.0.153"
+  },
+  "10.0.0.155": {
+    "token": "c92d4567338ebcbc",
+    "timestamp": "2026-05-08T15:33:24.679277",
+    "hostname": "device-155.lan",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.155"
+  },
+  "10.0.0.162": {
+    "token": "81ddb6a9c1e4d60b",
+    "timestamp": "2026-05-08T15:33:24.879966",
+    "hostname": "device-162.lan",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.162"
+  },
+  "10.0.0.163": {
+    "token": "6c2f2a9f278a574a",
+    "timestamp": "2026-05-08T15:33:24.962493",
+    "hostname": "device-163.corp",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.163"
+  },
+  "10.0.0.168": {
+    "token": "85211cc8070a95ed",
+    "timestamp": "2026-05-08T15:33:25.004241",
+    "hostname": "device-168.office",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.168"
+  },
+  "10.0.0.169": {
+    "token": "0c0325e6a9e56ce3",
+    "timestamp": "2026-05-08T15:33:25.051876",
+    "hostname": "device-169.office",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.169"
+  },
+  "10.0.0.171": {
+    "token": "9aa17da8e1e1f6fd",
+    "timestamp": "2026-05-08T15:33:25.104054",
+    "hostname": "device-171.lan",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.171"
+  },
+  "10.0.0.177": {
+    "token": "84613e27ad0f595c",
+    "timestamp": "2026-05-08T15:33:25.139017",
+    "hostname": "device-177.office",
+    "os_info": "Android 14",
+    "ip": "10.0.0.177"
+  },
+  "10.0.0.178": {
+    "token": "b3a9be0031d98ae3",
+    "timestamp": "2026-05-08T15:33:25.175647",
+    "hostname": "device-178.home",
+    "os_info": "Unknown IoT",
+    "ip": "10.0.0.178"
+  },
+  "10.0.0.180": {
+    "token": "14bb5afe91bc764d",
+    "timestamp": "2026-05-08T15:33:25.210429",
+    "hostname": "device-180.office",
+    "os_info": "Android 14",
+    "ip": "10.0.0.180"
+  },
+  "10.0.0.182": {
+    "token": "e4f3795a1170bbbf",
+    "timestamp": "2026-05-08T15:33:25.245515",
+    "hostname": "device-182.corp",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.182"
+  },
+  "10.0.0.185": {
+    "token": "f64a09fc03547162",
+    "timestamp": "2026-05-08T15:33:25.281688",
+    "hostname": "device-185.lan",
+    "os_info": "Android 14",
+    "ip": "10.0.0.185"
+  },
+  "10.0.0.188": {
+    "token": "302e8aa814809bac",
+    "timestamp": "2026-05-08T15:33:25.319832",
+    "hostname": "device-188.home",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.188"
+  },
+  "10.0.0.195": {
+    "token": "146005e10d5bebe1",
+    "timestamp": "2026-05-08T15:33:25.362422",
+    "hostname": "device-195.local",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.195"
+  },
+  "10.0.0.199": {
+    "token": "06929c8f63346b72",
+    "timestamp": "2026-05-08T15:33:25.404502",
+    "hostname": "device-199.office",
+    "os_info": "Android 14",
+    "ip": "10.0.0.199"
+  },
+  "10.0.0.201": {
+    "token": "a1c8361cb7e45022",
+    "timestamp": "2026-05-08T15:33:25.445591",
+    "hostname": "device-201.office",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.201"
+  },
+  "10.0.0.203": {
+    "token": "ba9b6e8cb838b850",
+    "timestamp": "2026-05-08T15:33:25.484562",
+    "hostname": "device-203.lan",
+    "os_info": "Unknown IoT",
+    "ip": "10.0.0.203"
+  },
+  "10.0.0.207": {
+    "token": "56c03ca87b735eed",
+    "timestamp": "2026-05-08T15:33:25.523228",
+    "hostname": "device-207.home",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.207"
+  },
+  "10.0.0.208": {
+    "token": "14162752261c0521",
+    "timestamp": "2026-05-08T15:33:25.606972",
+    "hostname": "device-208.local",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.208"
+  },
+  "10.0.0.213": {
+    "token": "e79efe7c93698bde",
+    "timestamp": "2026-05-08T15:33:25.685425",
+    "hostname": "device-213.corp",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.213"
+  },
+  "10.0.0.218": {
+    "token": "44a06e90c54a89fe",
+    "timestamp": "2026-05-08T15:33:25.738236",
+    "hostname": "device-218.local",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.218"
+  },
+  "10.0.0.219": {
+    "token": "1699d85b4852529e",
+    "timestamp": "2026-05-08T15:33:25.793812",
+    "hostname": "device-219.lan",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.219"
+  },
+  "10.0.0.220": {
+    "token": "b74310fc111b8b61",
+    "timestamp": "2026-05-08T15:33:25.840504",
+    "hostname": "device-220.corp",
+    "os_info": "Unknown IoT",
+    "ip": "10.0.0.220"
+  },
+  "10.0.0.221": {
+    "token": "287ef5652d0c7338",
+    "timestamp": "2026-05-08T15:33:25.879270",
+    "hostname": "device-221.corp",
+    "os_info": "Windows Server 2022",
+    "ip": "10.0.0.221"
+  },
+  "10.0.0.228": {
+    "token": "7f3aeae0bf1c83bf",
+    "timestamp": "2026-05-08T15:33:25.929436",
+    "hostname": "device-228.lan",
+    "os_info": "Windows 11",
+    "ip": "10.0.0.228"
+  },
+  "10.0.0.229": {
+    "token": "f0b9f4bc18c54f36",
+    "timestamp": "2026-05-08T15:33:25.991951",
+    "hostname": "device-229.home",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.229"
+  },
+  "10.0.0.232": {
+    "token": "768ffe75ce1b2b1c",
+    "timestamp": "2026-05-08T15:33:26.063395",
+    "hostname": "device-232.office",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.232"
+  },
+  "10.0.0.234": {
+    "token": "1532ce1bd124bd1c",
+    "timestamp": "2026-05-08T15:33:26.125128",
+    "hostname": "device-234.lan",
+    "os_info": "iOS 17",
+    "ip": "10.0.0.234"
+  },
+  "10.0.0.236": {
+    "token": "f09df22a6e3064d9",
+    "timestamp": "2026-05-08T15:33:26.187380",
+    "hostname": "device-236.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.236"
+  },
+  "10.0.0.240": {
+    "token": "9fbd94d63b1232d2",
+    "timestamp": "2026-05-08T15:33:26.242426",
+    "hostname": "device-240.office",
+    "os_info": "macOS 14",
+    "ip": "10.0.0.240"
+  },
+  "10.0.0.243": {
+    "token": "3e5a10830e2cca3a",
+    "timestamp": "2026-05-08T15:33:26.341144",
+    "hostname": "device-243.office",
+    "os_info": "Ubuntu 22.04",
+    "ip": "10.0.0.243"
+  },
+  "10.0.0.245": {
+    "token": "e9fa74493eb65176",
+    "timestamp": "2026-05-08T15:33:26.404554",
+    "hostname": "device-245.home",
+    "os_info": "Windows Server 2022",
+    "ip": "10.0.0.245"
+  },
+  "192.168.0.9": {
+    "token": "5e072dce5bcabece",
+    "timestamp": "2026-05-08T15:33:26.461348",
+    "hostname": "device-9.home",
+    "os_info": "Android 14",
+    "ip": "192.168.0.9"
+  },
+  "192.168.0.12": {
+    "token": "163f3838e2ae0f64",
+    "timestamp": "2026-05-08T15:33:26.523555",
+    "hostname": "device-12.lan",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.12"
+  },
+  "192.168.0.17": {
+    "token": "2a4afcc6401aaaf1",
+    "timestamp": "2026-05-08T15:33:26.587419",
+    "hostname": "device-17.local",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.17"
+  },
+  "192.168.0.24": {
+    "token": "f3eb218567744d85",
+    "timestamp": "2026-05-08T15:33:26.651711",
+    "hostname": "device-24.office",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.24"
+  },
+  "192.168.0.28": {
+    "token": "65ca1b0bbf818b16",
+    "timestamp": "2026-05-08T15:33:26.705190",
+    "hostname": "device-28.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.0.28"
+  },
+  "192.168.0.31": {
+    "token": "306f758f681f73a6",
+    "timestamp": "2026-05-08T15:33:26.770052",
+    "hostname": "device-31.lan",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.31"
+  },
+  "192.168.0.34": {
+    "token": "0db675b754e18972",
+    "timestamp": "2026-05-08T15:33:26.915704",
+    "hostname": "device-34.lan",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.34"
+  },
+  "192.168.0.57": {
+    "token": "42a2af354b89fcf8",
+    "timestamp": "2026-05-08T15:33:26.996592",
+    "hostname": "device-57.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.0.57"
+  },
+  "192.168.0.59": {
+    "token": "affb569573cd978a",
+    "timestamp": "2026-05-08T15:33:27.057425",
+    "hostname": "device-59.office",
+    "os_info": "Android 14",
+    "ip": "192.168.0.59"
+  },
+  "192.168.0.62": {
+    "token": "8d5c4aa412491c87",
+    "timestamp": "2026-05-08T15:33:27.100296",
+    "hostname": "device-62.home",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.62"
+  },
+  "192.168.0.63": {
+    "token": "fc32c045ab5c549f",
+    "timestamp": "2026-05-08T15:33:27.135528",
+    "hostname": "device-63.home",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.63"
+  },
+  "192.168.0.77": {
+    "token": "316fb12276c7aac6",
+    "timestamp": "2026-05-08T15:33:27.171557",
+    "hostname": "device-77.lan",
+    "os_info": "Android 14",
+    "ip": "192.168.0.77"
+  },
+  "192.168.0.83": {
+    "token": "22f393710dff5e12",
+    "timestamp": "2026-05-08T15:33:27.214609",
+    "hostname": "device-83.home",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.83"
+  },
+  "192.168.0.91": {
+    "token": "edc197c93bd7d43b",
+    "timestamp": "2026-05-08T15:33:27.325191",
+    "hostname": "device-91.corp",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.91"
+  },
+  "192.168.0.94": {
+    "token": "479e0bd240156c0d",
+    "timestamp": "2026-05-08T15:33:27.436012",
+    "hostname": "device-94.office",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.94"
+  },
+  "192.168.0.104": {
+    "token": "5812be4cdee499c3",
+    "timestamp": "2026-05-08T15:33:27.618178",
+    "hostname": "device-104.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.104"
+  },
+  "192.168.0.107": {
+    "token": "cfd474fa2d45d3a5",
+    "timestamp": "2026-05-08T15:33:27.662576",
+    "hostname": "device-107.home",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.107"
+  },
+  "192.168.0.117": {
+    "token": "94b94e5704aaf2a2",
+    "timestamp": "2026-05-08T15:33:27.716813",
+    "hostname": "device-117.lan",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.117"
+  },
+  "192.168.0.127": {
+    "token": "92d302847b44e4b8",
+    "timestamp": "2026-05-08T15:33:27.788567",
+    "hostname": "device-127.local",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.127"
+  },
+  "192.168.0.129": {
+    "token": "871d9094209e6042",
+    "timestamp": "2026-05-08T15:33:27.886772",
+    "hostname": "device-129.office",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.129"
+  },
+  "192.168.0.130": {
+    "token": "99b70d846858ab82",
+    "timestamp": "2026-05-08T15:33:27.958852",
+    "hostname": "device-130.home",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.130"
+  },
+  "192.168.0.135": {
+    "token": "7dbdf5d7ae0215db",
+    "timestamp": "2026-05-08T15:33:28.073896",
+    "hostname": "device-135.office",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.135"
+  },
+  "192.168.0.136": {
+    "token": "80359a12d29a5422",
+    "timestamp": "2026-05-08T15:33:28.126493",
+    "hostname": "device-136.corp",
+    "os_info": "Windows 11",
+    "ip": "192.168.0.136"
+  },
+  "192.168.0.137": {
+    "token": "38ff2235c7b44e01",
+    "timestamp": "2026-05-08T15:33:28.190948",
+    "hostname": "device-137.corp",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.137"
+  },
+  "192.168.0.153": {
+    "token": "03954e8297ace577",
+    "timestamp": "2026-05-08T15:33:28.248278",
+    "hostname": "device-153.lan",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.153"
+  },
+  "192.168.0.155": {
+    "token": "5a6ae8b2ac2d5607",
+    "timestamp": "2026-05-08T15:33:28.330860",
+    "hostname": "device-155.office",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.155"
+  },
+  "192.168.0.157": {
+    "token": "7dc613174a08d8fb",
+    "timestamp": "2026-05-08T15:33:28.385879",
+    "hostname": "device-157.office",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.157"
+  },
+  "192.168.0.165": {
+    "token": "827caed248172e1e",
+    "timestamp": "2026-05-08T15:33:28.452064",
+    "hostname": "device-165.lan",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.165"
+  },
+  "192.168.0.173": {
+    "token": "e1c99a60569fe90c",
+    "timestamp": "2026-05-08T15:33:28.616101",
+    "hostname": "device-173.home",
+    "os_info": "Android 14",
+    "ip": "192.168.0.173"
+  },
+  "192.168.0.178": {
+    "token": "49152b0d114b1a1b",
+    "timestamp": "2026-05-08T15:33:28.683792",
+    "hostname": "device-178.local",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.178"
+  },
+  "192.168.0.184": {
+    "token": "b66d31e35a08169e",
+    "timestamp": "2026-05-08T15:33:28.739609",
+    "hostname": "device-184.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.0.184"
+  },
+  "192.168.0.189": {
+    "token": "13271d57137aff74",
+    "timestamp": "2026-05-08T15:33:28.812600",
+    "hostname": "device-189.office",
+    "os_info": "Android 14",
+    "ip": "192.168.0.189"
+  },
+  "192.168.0.191": {
+    "token": "65f79f42373a0c96",
+    "timestamp": "2026-05-08T15:33:28.855159",
+    "hostname": "device-191.corp",
+    "os_info": "iOS 17",
+    "ip": "192.168.0.191"
+  },
+  "192.168.0.194": {
+    "token": "00a6af652a1300a8",
+    "timestamp": "2026-05-08T15:33:28.896055",
+    "hostname": "device-194.home",
+    "os_info": "Android 14",
+    "ip": "192.168.0.194"
+  },
+  "192.168.0.208": {
+    "token": "b4da067fe73e34d6",
+    "timestamp": "2026-05-08T15:33:28.935497",
+    "hostname": "device-208.office",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.208"
+  },
+  "192.168.0.210": {
+    "token": "755ea60965e67449",
+    "timestamp": "2026-05-08T15:33:28.973848",
+    "hostname": "device-210.lan",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.210"
+  },
+  "192.168.0.218": {
+    "token": "56e0ef78d7a5a6bf",
+    "timestamp": "2026-05-08T15:33:29.026011",
+    "hostname": "device-218.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.218"
+  },
+  "192.168.0.223": {
+    "token": "6d8f946538d171ba",
+    "timestamp": "2026-05-08T15:33:29.067668",
+    "hostname": "device-223.lan",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.223"
+  },
+  "192.168.0.224": {
+    "token": "b1f2da530091f6f0",
+    "timestamp": "2026-05-08T15:33:29.104490",
+    "hostname": "device-224.home",
+    "os_info": "Android 14",
+    "ip": "192.168.0.224"
+  },
+  "192.168.0.235": {
+    "token": "f09a264f52d3007e",
+    "timestamp": "2026-05-08T15:33:29.153675",
+    "hostname": "device-235.office",
+    "os_info": "Unknown IoT",
+    "ip": "192.168.0.235"
+  },
+  "192.168.0.238": {
+    "token": "f9934b0b4e29f046",
+    "timestamp": "2026-05-08T15:33:29.225470",
+    "hostname": "device-238.corp",
+    "os_info": "Android 14",
+    "ip": "192.168.0.238"
+  },
+  "192.168.0.243": {
+    "token": "14de8195b3ba7259",
+    "timestamp": "2026-05-08T15:33:29.425313",
+    "hostname": "device-243.corp",
+    "os_info": "macOS 14",
+    "ip": "192.168.0.243"
+  },
+  "192.168.0.251": {
+    "token": "308006ba55da912b",
+    "timestamp": "2026-05-08T15:33:29.561035",
+    "hostname": "device-251.office",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.251"
+  },
+  "192.168.0.253": {
+    "token": "00a22b8f548c3651",
+    "timestamp": "2026-05-08T15:33:29.652558",
+    "hostname": "device-253.office",
+    "os_info": "Windows Server 2022",
+    "ip": "192.168.0.253"
+  },
+  "192.168.0.254": {
+    "token": "58e308f7eb6669df",
+    "timestamp": "2026-05-08T15:33:29.735416",
+    "hostname": "device-254.local",
+    "os_info": "Ubuntu 22.04",
+    "ip": "192.168.0.254"
+  }
+}

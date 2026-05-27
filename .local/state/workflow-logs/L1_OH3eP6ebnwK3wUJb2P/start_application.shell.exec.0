@@ -1,0 +1,4 @@
+  File "/home/runner/workspace/4.py", line 483
+    elif cmd == "clear":
+    ^^^^
+SyntaxError: invalid syntax

@@ -1,0 +1,58 @@
+
+  [36m[1m◈  Initializing Omniscience Framework v5.1 ...[0m
+[0m  [34m────────────────────────────────────────────────────────────[0m
+[0m  [36m[1m⠋  [37mLoading Discovery Engine        [0m[0m  [36m[1m⠙  [37mLoading Discovery Engine        [0m[0m  [36m[1m⠹  [37mLoading Discovery Engine        [0m[0m  [36m[1m⠸  [37mLoading Discovery Engine        [0m[0m  [36m[1m⠼  [37mLoading Discovery Engine        [0m[0m  [36m[1m⠴  [37mLoading Discovery Engine        [0m[0m  [36m[1m⠦  [37mLoading Discovery Engine        [0m[0m  [36m[1m⠧  [37mLoading Discovery Engine        [0m[0m  [32m[1m✔  [37mDiscovery Engine        [32m  LOADED   [0m
+[0m  [36m[1m⠇  [37mLoading Intelligence Module     [0m[0m  [36m[1m⠏  [37mLoading Intelligence Module     [0m[0m  [36m[1m⠋  [37mLoading Intelligence Module     [0m[0m  [36m[1m⠙  [37mLoading Intelligence Module     [0m[0m  [36m[1m⠹  [37mLoading Intelligence Module     [0m[0m  [36m[1m⠸  [37mLoading Intelligence Module     [0m[0m  [36m[1m⠼  [37mLoading Intelligence Module     [0m[0m  [36m[1m⠴  [37mLoading Intelligence Module     [0m[0m  [32m[1m✔  [37mIntelligence Module     [32m  LOADED   [0m
+[0m  [36m[1m⠦  [37mLoading Control Engine (Win7-11)[0m[0m  [36m[1m⠧  [37mLoading Control Engine (Win7-11)[0m[0m  [36m[1m⠇  [37mLoading Control Engine (Win7-11)[0m[0m  [36m[1m⠏  [37mLoading Control Engine (Win7-11)[0m[0m  [36m[1m⠋  [37mLoading Control Engine (Win7-11)[0m[0m  [36m[1m⠙  [37mLoading Control Engine (Win7-11)[0m[0m  [36m[1m⠹  [37mLoading Control Engine (Win7-11)[0m[0m  [36m[1m⠸  [37mLoading Control Engine (Win7-11)[0m[0m  [32m[1m✔  [37mControl Engine (Win7-11)[32m  LOADED   [0m
+[0m  [36m[1m⠼  [37mLoading Advanced Scanner        [0m[0m  [36m[1m⠴  [37mLoading Advanced Scanner        [0m[0m  [36m[1m⠦  [37mLoading Advanced Scanner        [0m[0m  [36m[1m⠧  [37mLoading Advanced Scanner        [0m[0m  [36m[1m⠇  [37mLoading Advanced Scanner        [0m[0m  [36m[1m⠏  [37mLoading Advanced Scanner        [0m[0m  [36m[1m⠋  [37mLoading Advanced Scanner        [0m[0m  [36m[1m⠙  [37mLoading Advanced Scanner        [0m[0m  [32m[1m✔  [37mAdvanced Scanner        [32m  LOADED   [0m
+[0m  [36m[1m⠹  [37mLoading Command Center          [0m[0m  [36m[1m⠸  [37mLoading Command Center          [0m[0m  [36m[1m⠼  [37mLoading Command Center          [0m[0m  [36m[1m⠴  [37mLoading Command Center          [0m[0m  [36m[1m⠦  [37mLoading Command Center          [0m[0m  [36m[1m⠧  [37mLoading Command Center          [0m[0m  [36m[1m⠇  [37mLoading Command Center          [0m[0m  [36m[1m⠏  [37mLoading Command Center          [0m[0m  [32m[1m✔  [37mCommand Center          [32m  LOADED   [0m
+[0m  [36m[1m⠋  [37mLoading Universal Access Engine [0m[0m  [36m[1m⠙  [37mLoading Universal Access Engine [0m[0m  [36m[1m⠹  [37mLoading Universal Access Engine [0m[0m  [36m[1m⠸  [37mLoading Universal Access Engine [0m[0m  [36m[1m⠼  [37mLoading Universal Access Engine [0m[0m  [36m[1m⠴  [37mLoading Universal Access Engine [0m[0m  [36m[1m⠦  [37mLoading Universal Access Engine [0m[0m  [36m[1m⠧  [37mLoading Universal Access Engine [0m[0m  [32m[1m✔  [37mUniversal Access Engine [32m  LOADED   [0m
+[0m
+  [34m────────────────────────────────────────────────────────────[0m
+[0m  [32m[1m✔  6/6 modules active[0m
+[0m  [36m[1m◈  Win7 + Win10/11 exploit chains: [32mENABLED[0m
+[0m  [36m[1m◈  CVE coverage: EternalBlue │ SMBGhost │ PrintNightmare │ Zerologon │ PetitPotam[0m
+[0m  [34m────────────────────────────────────────────────────────────[0m
+[0m
+  [32m[1m● Omniscience Framework READY  │  Type 'help' for commands
+[0m
+[0m
+[0m[34m[1m╔════════════════════════════════════════════════════════════════════════════════════════╗[0m
+[0m[34m[1m║                                                                                        ║[0m
+[0m[34m[1m║ [34m[1m  ██████╗ ███╗   ███╗███╗   ██╗██╗███████╗ ██████╗██╗███████╗███╗   ██╗ ██████╗███████╗[34m ║[0m
+[0m[34m[1m║ [36m[1m  ██╔═══██╗████╗ ████║████╗  ██║██║██╔════╝██╔════╝██║██╔════╝████╗  ██║██╔════╝██╔════╝[34m ║[0m
+[0m[34m[1m║ [37m[1m  ██║   ██║██╔████╔██║██╔██╗ ██║██║███████╗██║     ██║█████╗  ██╔██╗ ██║██║     █████╗  [34m ║[0m
+[0m[34m[1m║ [36m[1m  ██║   ██║██║╚██╔╝██║██║╚██╗██║██║╚════██║██║     ██║██╔══╝  ██║╚██╗██║██║     ██╔══╝  [34m ║[0m
+[0m[34m[1m║ [36m[1m  ╚██████╔╝██║ ╚═╝ ██║██║ ╚████║██║███████║╚██████╗██║███████╗██║ ╚████║╚██████╗███████╗[34m ║[0m
+[0m[34m[1m║ [34m[1m   ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝╚══════╝ ╚═════╝╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝╚══════╝[34m ║[0m
+[0m[34m[1m║                                                                                        ║[0m
+[0m[34m[1m║     [33m[1m▸ Advanced Network Command & Control Center  ◂  Version 5.1  ◂  Windows 7 → 11[34m     ║[0m
+[0m[34m[1m║                                                                                        ║[0m
+[0m[34m[1m║                            [32m[1m[ Session: 2026-04-17 09:21:38 ][34m                            ║[0m
+[0m[34m[1m╚════════════════════════════════════════════════════════════════════════════════════════╝[0m
+[0m
+[0m  [36m[1m▸  Type [33m'help'[36m for 140+ commands  │  [33m'dashboard'[36m for status  │  [33m'exit'[36m to quit
+[0m
+[0m  [36m[1m⠿  Running initial network sweep...[0m
+[0m
+======================================================================[0m
+[0m  OMNISCIENCE - AUTOMATIC NETWORK DISCOVERY[0m
+[0m======================================================================[0m
+[0m
+[*] Step 1: Detecting network configuration...[0m
+[0m    Local IP     : 172.31.89.194[0m
+[0m    Network     : 172.31.89.0/24[0m
+[0m    Gateway     : 172.31.89.1[0m
+[0m    Subnet Mask  : 255.255.255.0[0m
+[0m
+[*] Step 2: Running comprehensive scan on 172.31.89.0/24...[0m
+[0m
+[*] Step 3: Identifying special devices...[0m
+[0m
+[*] Step 4: Determining device types...[0m
+[0m
+[*] Step 5: Advanced device fingerprinting...[0m
+[0m
+[*] Discovery complete! Found 0 devices.[0m
+[0m[31m[!] No hosts discovered. Run 'auto' first.[0m
+[0m[34m[1m[[37m09:21:38[34m][36m omni[37m@[31m[1mshell[37m[0m[36m❯ [0m

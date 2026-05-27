@@ -1,0 +1,24 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "colorama>=0.4.6",
+    "scapy>=2.5.0",
+    "impacket>=0.10.0",
+    "paramiko>=3.4.0",
+    "netifaces2>=1.0.0",
+    "PyQt6>=6.5.0",
+    "Pillow>=10.0.0",
+    "pywin32>=306",
+    "pymysql>=1.1.0",
+    "psycopg2-binary>=2.9.9",
+    "pymongo>=4.10.1",
+    "redis>=5.0.0",
+    "ldap3>=2.9.1",
+    "requests>=2.31.0",
+    "pycryptodome>=3.20.0",
+    "pyyaml>=6.0.1",
+    "dnspython>=2.4.0",
+]
