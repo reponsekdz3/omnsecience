@@ -1,0 +1,11 @@
+scapy
+paramiko
+requests
+cryptography
+colorama
+netifaces
+pymysql
+psycopg2-binary
+pymongo
+redis
+dnspython

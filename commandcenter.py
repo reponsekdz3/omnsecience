@@ -1187,15 +1187,17 @@ class OmniShell:
         if event.get("type") == "credential":
             print(f"\n{Fore.MAGENTA}[INTEL] ALERT: Credential harvested from {event.get('source')}")
 
-    async def start(self):
-        """Starts the interactive shell loop asynchronously."""
-        self.display_banner()
-        while True:
-            # Display active target indicator if set
-            if self.last_target:
-                print(f"{Fore.YELLOW}[TARGET: {self.last_target}]")
-                
-            cmd = await asyncio.to_thread(input, f"{Fore.CYAN}omniscence> {Style.RESET_ALL}")
+async def start(self):
+         """Starts the interactive shell loop asynchronously."""
+         self.display_banner()
+         print(f"{Fore.LIGHTBLACK_EX}┌─ Commands: {Fore.CYAN}help{Fore.LIGHTBLACK_EX} | {Fore.CYAN}globalscan{Fore.LIGHTBLACK_EX} | {Fore.CYAN}scan <ip>{Fore.LIGHTBLACK_EX} | {Fore.CYAN}exit{Fore.LIGHTBLACK_EX}")
+         print(f"{Fore.LIGHTBLACK_EX}└─ Type 'help' for all 150+ commands.{Style.RESET_ALL}")
+         while True:
+             # Display active target indicator if set
+             if self.last_target:
+                 print(f"{Fore.YELLOW}[TARGET: {self.last_target}]", end=" ")
+
+             cmd = await asyncio.to_thread(input, f"{Fore.CYAN}omniscence> {Style.RESET_ALL}")
             await self.handle_command(cmd)
 
     async def handle_command(self, cmd_input: str):
