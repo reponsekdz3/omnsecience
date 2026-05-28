@@ -720,27 +720,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()Scan stopped")
-                
-                elif cmd == 'clear':
-                    self.devices.clear()
-                    print(Fore.GREEN + "[+] Device cache cleared")
-                
-                else:
-                    print(Fore.YELLOW + f"[!] Unknown command: {cmd}")
-                    print(Fore.YELLOW + "    Type 'help' for available commands")
-            
-            except KeyboardInterrupt:
-                print(Fore.YELLOW + "\n[*] Use 'exit' to quit")
-            except Exception as e:
-                print(Fore.RED + f"[!] Error: {e}")
-
-
-if __name__ == "__main__":
-    scanner = LiveNetworkScanner()
-    scanner.interactive_mode()
-
-
-if __name__ == "__main__":
-    scanner = LiveNetworkScanner()
-    scanner.interactive_mode()
+    main()
