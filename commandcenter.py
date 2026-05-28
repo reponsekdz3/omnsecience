@@ -1173,16 +1173,12 @@ class OmniShell:
         ]
 
         print(f"{Fore.LIGHTBLACK_EX}{'='*60}")
-        for line in banner_txt:
-            print(f"{Fore.CYAN}{line.center(60)}")
-        print(f"{Fore.LIGHTBLACK_EX}{'='*60}")
-
         print(f"{Fore.LIGHTGREEN_EX}SYSTEM: {sys.platform.upper():<10} | HOST: {hostname:<15} | LAN: {local_ip:<15} | WAN: {public_ip:<15}")
         print(f"{Fore.MAGENTA}VERSION: {self.version:<10} | CLEARANCE: TOP_SECRET | SECURITY: GOVT_OPS_ONLY")
         print(f"{Fore.LIGHTBLACK_EX}{'='*60}")
         print(f"{Fore.YELLOW}[i] Terminal Ready. Command Interface Active.\n")
 
-def _on_intel_event(self, event):
+    def _on_intel_event(self, event):
         """Handles background intelligence events."""
         if event.get("type") == "credential":
             print(f"\n{Fore.MAGENTA}[INTEL] ALERT: Credential harvested from {event.get('source')}")
