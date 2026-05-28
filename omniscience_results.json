@@ -1,0 +1,19 @@
+{
+  "scan_info": {
+    "network": "10.15.155.0/24",
+    "targets_scanned": 20,
+    "live_hosts": [
+      "10.15.155.1"
+    ],
+    "hosts_with_ports": [
+      "10.15.155.1"
+    ],
+    "compromised_count": 0
+  },
+  "compromised_hosts": [],
+  "scan_results": {
+    "10.15.155.1": [
+      22
+    ]
+  }
+}

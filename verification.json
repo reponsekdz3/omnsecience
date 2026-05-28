@@ -1,0 +1,8 @@
+{
+  "target": "10.15.155.1",
+  "status": "service_detected",
+  "service": "ssh",
+  "port": 22,
+  "note": "SSH service detected but login attempts blocked",
+  "timestamp": "2026-05-28 18:21:24.817550"
+}

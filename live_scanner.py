@@ -95,7 +95,7 @@ class RealTimeScanner:
             ip = dev.ip[:15].ljust(15)
             hostname = (dev.hostname or dev.ip)[:18].ljust(18)
             os_type = (dev.os or 'Unknown')[:13].ljust(13)
-            dev_type = (dev.device_type or 'unknown')[:7).ljust(7)
+            dev_type = (dev.device_type or 'unknown')[:7].ljust(7)
             ports = str(len(dev.open_ports)).ljust(5)
             vulns = str(len(dev.is_vulnerable)).ljust(5)
             pwn = Fore.GREEN + "YES" + Fore.WHITE if dev.can_pwn else Fore.RED + "NO" + Fore.WHITE

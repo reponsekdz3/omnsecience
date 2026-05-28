@@ -206,3 +206,100 @@
 2026-05-28 17:55:21,461 | [INFO] | AdvScanner | [VPN] Scanning for VPN networks
 2026-05-28 17:55:29,559 | [INFO] | AdvScanner | [DISCOVERY] Scanning cloud ranges
 2026-05-28 17:55:29,560 | [INFO] | AdvScanner | [PUBLIC-SCAN] Scanning aws ranges
+2026-05-28 17:56:30,181 | [INFO] | AdvScanner | [GEO] 3.0.0.27 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:30,183 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.27 ([80])
+2026-05-28 17:56:30,195 | [INFO] | AdvScanner | [GEO] 3.0.0.20 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:30,196 | [INFO] | AdvScanner | [GEO] 3.0.0.9 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:30,196 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.20 ([80])
+2026-05-28 17:56:30,198 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.9 ([80])
+2026-05-28 17:56:30,225 | [INFO] | AdvScanner | [GEO] 3.0.0.8 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:30,225 | [INFO] | AdvScanner | [GEO] 3.0.0.24 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:30,226 | [INFO] | AdvScanner | [GEO] 3.0.0.15 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:30,227 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.8 ([80])
+2026-05-28 17:56:30,228 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.24 ([80])
+2026-05-28 17:56:30,229 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.15 ([80])
+2026-05-28 17:56:31,054 | [INFO] | AdvScanner | [GEO] 3.0.0.32 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:31,058 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.32 ([80])
+2026-05-28 17:56:31,191 | [INFO] | AdvScanner | [GEO] 3.0.0.39 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:31,192 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.39 ([80])
+2026-05-28 17:56:31,203 | [INFO] | AdvScanner | [GEO] 3.0.0.4 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:31,204 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.4 ([80])
+2026-05-28 17:56:31,213 | [INFO] | AdvScanner | [GEO] 3.0.0.34 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:31,214 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.34 ([80])
+2026-05-28 17:56:31,233 | [INFO] | AdvScanner | [GEO] 3.0.0.25 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:31,234 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.25 ([80])
+2026-05-28 17:56:31,255 | [INFO] | AdvScanner | [GEO] 3.0.0.42 -> Singapore, Singapore via ip-api
+2026-05-28 17:56:31,256 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 3.0.0.42 ([80])
+2026-05-28 17:56:58,283 | [INFO] | AdvScanner | [REVOLUTIONARY] AI, Quantum, Blockchain, IoT, and Hypervisor engines initialized
+2026-05-28 17:56:59,297 | [INFO] | AdvScanner | [PUBLIC-SCAN] Scanning azure ranges
+2026-05-28 17:58:01,466 | [INFO] | AdvScanner | [GEO] 20.0.0.29 -> City of London, United Kingdom via ip-api
+2026-05-28 17:58:01,468 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 20.0.0.29 ([80])
+2026-05-28 17:58:01,539 | [INFO] | AdvScanner | [GEO] 20.0.0.12 -> City of London, United Kingdom via ip-api
+2026-05-28 17:58:01,540 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 20.0.0.12 ([80])
+2026-05-28 17:58:02,434 | [INFO] | AdvScanner | [GEO] 20.0.0.42 -> City of London, United Kingdom via ip-api
+2026-05-28 17:58:02,435 | [INFO] | AdvScanner | [GEO] 20.0.0.36 -> City of London, United Kingdom via ip-api
+2026-05-28 17:58:02,435 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 20.0.0.42 ([80])
+2026-05-28 17:58:02,437 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 20.0.0.36 ([80])
+2026-05-28 17:58:02,714 | [INFO] | AdvScanner | [PUBLIC-SCAN] Scanning gcp ranges
+2026-05-28 17:58:25,369 | [INFO] | AdvScanner | [GEO] 35.192.0.18 -> Council Bluffs, United States via ip-api
+2026-05-28 17:58:25,370 | [INFO] | AdvScanner | [GEO] 35.192.0.27 -> Council Bluffs, United States via ip-api
+2026-05-28 17:58:25,371 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 35.192.0.18 ([80])
+2026-05-28 17:58:25,372 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 35.192.0.27 ([80])
+2026-05-28 17:58:26,284 | [INFO] | AdvScanner | [GEO] 35.192.0.45 -> Council Bluffs, United States via ip-api
+2026-05-28 17:58:26,285 | [INFO] | AdvScanner | [GEO] 35.192.0.40 -> Council Bluffs, United States via ip-api
+2026-05-28 17:58:26,286 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 35.192.0.45 ([80])
+2026-05-28 17:58:26,287 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 35.192.0.40 ([80])
+2026-05-28 17:58:26,397 | [INFO] | AdvScanner | [PUBLIC-SCAN] Scanning digitalocean ranges
+2026-05-28 17:59:50,626 | [INFO] | AdvScanner | [ULTRAMAX] GLOBAL NETWORK DISCOVERY INITIATED
+2026-05-28 17:59:50,703 | [INFO] | AdvScanner | [ULTRAMAX] Scanning range 1/10: 10.15.155.0/24
+2026-05-28 17:59:51,405 | [INFO] | AdvScanner | [PUBLIC-SCAN] Scanning linode ranges
+2026-05-28 18:00:05,606 | [INFO] | AdvScanner | [ICMP] Found: 10.15.155.107
+2026-05-28 18:00:06,254 | [INFO] | AdvScanner | [ICMP] Found: 10.15.155.107
+2026-05-28 18:00:06,835 | [INFO] | AdvScanner | [ICMP] Found: 10.15.155.88
+2026-05-28 18:00:07,594 | [INFO] | AdvScanner | [ICMP] Found: 10.15.155.88
+2026-05-28 18:00:08,112 | [INFO] | AdvScanner | [ICMP] Found: 10.15.155.201
+2026-05-28 18:00:09,316 | [INFO] | AdvScanner | [ICMP] Found: 10.15.155.201
+2026-05-28 18:00:10,075 | [INFO] | AdvScanner | [ICMP] Found: 10.15.155.1
+2026-05-28 18:00:11,109 | [INFO] | AdvScanner | [ICMP] Found: 10.15.155.1
+2026-05-28 18:00:49,265 | [INFO] | AdvScanner | [TCP-ULTRA] Found: 10.15.155.1 | OS: Network Device/Router | Ports: 1
+2026-05-28 18:01:47,359 | [INFO] | AdvScanner | [TCP-ULTRA] Found: 10.15.155.88 | OS: Windows | Ports: 1
+2026-05-28 18:02:17,480 | [INFO] | AdvScanner | [PUBLIC-SCAN] Scanning oracle ranges
+2026-05-28 18:04:46,585 | [INFO] | AdvScanner | [GEO] 143.0.0.21 -> Brodowski, Brazil via ip-api
+2026-05-28 18:04:46,586 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 143.0.0.21 ([80])
+2026-05-28 18:04:47,591 | [INFO] | AdvScanner | [PUBLIC-SCAN] Scanning alibaba ranges
+2026-05-28 18:06:53,807 | [INFO] | AdvScanner | [PUBLIC-SCAN] Scanning ibm ranges
+2026-05-28 18:07:45,352 | [INFO] | AdvScanner | [ULTRAMAX] Scanning range 2/10: 192.168.0.0/16
+2026-05-28 18:08:14,493 | [INFO] | AdvScanner | [GEO] 172.0.0.6 -> Calera, United States via ip-api
+2026-05-28 18:08:14,496 | [INFO] | AdvScanner | [PUBLIC-SCAN] Found: 172.0.0.6 ([80])
+2026-05-28 18:08:14,679 | [INFO] | AdvScanner | [DISCOVERY] Discovering GAN/MAN via traceroute
+2026-05-28 18:08:14,684 | [INFO] | AdvScanner | [TRACEROUTE] Tracing path to 1.1.1.1
+2026-05-28 18:08:33,298 | [INFO] | AdvScanner | [ASN] 196.32.209.32 -> AS36944 (196.32.208.0/21)
+2026-05-28 18:08:34,116 | [INFO] | AdvScanner | [ASN] 196.32.210.44 -> AS36944 (196.32.208.0/21)
+2026-05-28 18:08:35,161 | [INFO] | AdvScanner | [ASN] 196.32.210.7 -> AS36944 (196.32.208.0/21)
+2026-05-28 18:08:36,043 | [INFO] | AdvScanner | [ASN] 196.32.210.39 -> AS36944 (196.32.208.0/21)
+2026-05-28 18:08:36,992 | [INFO] | AdvScanner | [ASN] 196.32.210.36 -> AS36944 (196.32.208.0/21)
+2026-05-28 18:08:37,998 | [INFO] | AdvScanner | [ASN] 196.32.210.78 -> AS36944 (196.32.208.0/21)
+2026-05-28 18:08:38,826 | [INFO] | AdvScanner | [ASN] 196.60.8.198 -> ASNA (NA)
+2026-05-28 18:08:44,323 | [INFO] | AdvScanner | [ASN] 197.234.240.37 -> AS13335 (197.234.240.0/24)
+2026-05-28 18:08:45,258 | [INFO] | AdvScanner | [ASN] 1.1.1.1 -> AS13335 (1.1.1.0/24)
+2026-05-28 18:08:45,264 | [INFO] | AdvScanner | [TRACEROUTE] Reached target at hop 13
+2026-05-28 18:08:45,266 | [INFO] | AdvScanner | [TRACEROUTE] Complete: 12 hops
+2026-05-28 18:09:36,357 | [INFO] | AdvScanner | [GEO] 196.32.209.32 -> Lilongwe, Malawi via ip-api
+2026-05-28 18:09:36,836 | [INFO] | AdvScanner | [GEO] 196.32.210.44 -> Lilongwe, Malawi via ip-api
+2026-05-28 18:09:37,254 | [INFO] | AdvScanner | [GEO] 196.32.210.7 -> Lilongwe, Malawi via ip-api
+2026-05-28 18:09:37,692 | [INFO] | AdvScanner | [GEO] 196.32.210.39 -> Lilongwe, Malawi via ip-api
+2026-05-28 18:09:38,163 | [INFO] | AdvScanner | [GEO] 196.32.210.36 -> Lilongwe, Malawi via ip-api
+2026-05-28 18:09:39,653 | [INFO] | AdvScanner | [GEO] 196.32.210.78 -> Lilongwe, Malawi via ip-api
+2026-05-28 18:09:46,469 | [INFO] | AdvScanner | [GEO] 196.60.8.198 -> Johannesburg, South Africa via ipwhois
+2026-05-28 18:09:46,962 | [INFO] | AdvScanner | [GEO] 197.234.240.37 -> Johannesburg, South Africa via ip-api
+2026-05-28 18:09:47,431 | [INFO] | AdvScanner | [GEO] 1.1.1.1 -> South Brisbane, Australia via ip-api
+2026-05-28 18:09:47,439 | [INFO] | AdvScanner | [TRACEROUTE] Tracing path to 8.8.8.8
+2026-05-28 18:14:18,980 | [INFO] | AdvScanner | [REVOLUTIONARY] AI, Quantum, Blockchain, IoT, and Hypervisor engines initialized
+2026-05-28 18:28:04,089 | [INFO] | AdvScanner | [REVOLUTIONARY] AI, Quantum, Blockchain, IoT, and Hypervisor engines initialized
+2026-05-28 18:32:36,722 | [INFO] | AdvScanner | [REVOLUTIONARY] AI, Quantum, Blockchain, IoT, and Hypervisor engines initialized
+2026-05-28 18:33:29,800 | [INFO] | AdvScanner | [REVOLUTIONARY] AI, Quantum, Blockchain, IoT, and Hypervisor engines initialized
+2026-05-28 18:34:05,136 | [INFO] | AdvScanner | [REVOLUTIONARY] AI, Quantum, Blockchain, IoT, and Hypervisor engines initialized
+2026-05-28 18:40:24,751 | [INFO] | AdvScanner | [SCAN] 10.15.155.6: OS=Unknown Type=generic Ports=[] can_pwn=False vulns=[]
+2026-05-28 18:40:24,752 | [INFO] | AdvScanner | [PWN] Starting exploitation of 1 devices
+2026-05-28 18:40:56,006 | [INFO] | AdvScanner | [PWN] Starting post-exploitation data gathering...
+2026-05-28 18:40:56,008 | [INFO] | AdvScanner | [PWN] Complete. Exploited: 0, Failed: 0

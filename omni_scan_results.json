@@ -1,0 +1,10 @@
+{
+  "devices": [
+    {
+      "ip": "10.15.155.1",
+      "ssh": "open",
+      "other_ports": []
+    }
+  ],
+  "compromised": []
+}
