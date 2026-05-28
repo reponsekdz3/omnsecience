@@ -646,6 +646,84 @@ class LiveNetworkScanner:
                 
                 elif cmd == 'clear':
                     self.devices.clear()
+                    print(Fore.YELLOW + "[*] Device cache cleared")
+                
+                else:
+                    print(Fore.RED + f"[!] Unknown command: {cmd}")
+                    print(Fore.YELLOW + "[*] Type 'help' for available commands")
+            
+            except KeyboardInterrupt:
+                print(Fore.YELLOW + "\n[*] Use 'exit' to quit")
+            except Exception as e:
+                print(Fore.RED + f"[!] Error: {e}")
+
+
+def main():
+    """Main entry point."""
+    parser = argparse.ArgumentParser(
+        description='Real-Time Network Scanner with Live Display',
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    
+    parser.add_argument(
+        '-n', '--network',
+        help='Network range to scan (e.g., 192.168.1.0/24)',
+        default=None
+    )
+    
+    parser.add_argument(
+        '-i', '--interactive',
+        action='store_true',
+        help='Run in interactive mode'
+    )
+    
+    parser.add_argument(
+        '-o', '--output',
+        help='Export results to JSON file',
+        default=None
+    )
+    
+    parser.add_argument(
+        '-m', '--monitor',
+        action='store_true',
+        help='Continuous monitoring mode'
+    )
+    
+    args = parser.parse_args()
+    
+    try:
+        scanner = LiveNetworkScanner(network_range=args.network)
+        
+        if args.interactive:
+            scanner.interactive_mode()
+        elif args.monitor:
+            print(Fore.CYAN + "[*] Starting monitor mode (60s interval, Ctrl+C to stop)...")
+            try:
+                while True:
+                    scanner.scan_network()
+                    print(Fore.YELLOW + "[*] Next scan in 60 seconds...")
+                    time.sleep(60)
+            except KeyboardInterrupt:
+                print(Fore.YELLOW + "\n[*] Monitor mode stopped")
+        else:
+            scanner.scan_network(args.network)
+            
+            if args.output:
+                scanner.export_results(args.output)
+    
+    except KeyboardInterrupt:
+        print(Fore.YELLOW + "\n[*] Scan interrupted by user")
+    except Exception as e:
+        print(Fore.RED + f"[!] Fatal error: {e}")
+        import traceback
+        traceback.print_exc()
+
+
+if __name__ == "__main__":
+    main()Scan stopped")
+                
+                elif cmd == 'clear':
+                    self.devices.clear()
                     print(Fore.GREEN + "[+] Device cache cleared")
                 
                 else:
@@ -656,6 +734,11 @@ class LiveNetworkScanner:
                 print(Fore.YELLOW + "\n[*] Use 'exit' to quit")
             except Exception as e:
                 print(Fore.RED + f"[!] Error: {e}")
+
+
+if __name__ == "__main__":
+    scanner = LiveNetworkScanner()
+    scanner.interactive_mode()
 
 
 if __name__ == "__main__":

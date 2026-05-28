@@ -267,7 +267,7 @@ class OmniShell:
             }
         }
 
-    # ═══ REAL DATA EXTRACTION METHODS (MODERN IMPLEMENTATIONS) ═══════════════════════════════════════
+    # ????????? REAL DATA EXTRACTION METHODS (MODERN IMPLEMENTATIONS) ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
     async def extract_browser_credentials(self, target: str, username: str, password: str, domain: str = "."):
         """Extract browser credentials using real decryption methods."""
@@ -535,7 +535,7 @@ class OmniShell:
         
         return results
 
-    # ═══ POWERFUL AI AUTOMATION METHODS ══════════════════════════════════════════
+    # ????????? POWERFUL AI AUTOMATION METHODS ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
     def _ai_automated_recon_to_domination(self, target_scope="planetary"):
         """AI automated reconnaissance to complete domination."""
@@ -690,7 +690,7 @@ class OmniShell:
             "god_level_execution": True
         }
 
-    # ═══ ADVANCED AI ORCHESTRATION PHASES ════════════════════════════════════════
+    # ????????? ADVANCED AI ORCHESTRATION PHASES ????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
     def _ai_global_discovery_phase(self):
         """AI global discovery phase."""
@@ -716,7 +716,7 @@ class OmniShell:
         """AI reality engineering phase."""
         return {"phase": "reality_engineering", "complete": True, "ai_orchestrated": True}
 
-    # ═══ POWERFUL COMMAND EXECUTION METHODS ══════════════════════════════════════
+    # ????????? POWERFUL COMMAND EXECUTION METHODS ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
     async def execute_ai_powered_command(self, command: str, context: Dict = None):
         """Execute command with powerful AI enhancement."""
@@ -813,7 +813,7 @@ class OmniShell:
             "success_probability": 1.0
         }
 
-    # ═══ ADVANCED AI ORCHESTRATION METHODS ═══════════════════════════════════════
+    # ????????? ADVANCED AI ORCHESTRATION METHODS ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
     def _ai_orchestrated_reconnaissance(self):
         """AI-orchestrated reconnaissance operation."""
@@ -863,7 +863,7 @@ class OmniShell:
             "omniscience_achieved": True
         }
 
-    # ═══ POWERFUL COMMAND EXECUTION METHODS ══════════════════════════════════════
+    # ????????? POWERFUL COMMAND EXECUTION METHODS ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
     async def _quantum_accelerated_command_execution(self, command: str):
         """Execute command with quantum acceleration."""
@@ -935,7 +935,7 @@ class OmniShell:
             "universal_domination": True
         }
 
-    # ═══ GOD SUPREMACY IMPLEMENTATION METHODS ═════════════════════════════════════
+    # ????????? GOD SUPREMACY IMPLEMENTATION METHODS ???????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
     def _god_supremacy_domination(self):
         """Execute complete god supremacy domination."""
@@ -1096,7 +1096,7 @@ class OmniShell:
             "god_totally_god": True
         }
 
-    # ═══ GLOBAL AI OPTIMIZATION METHODS ══════════════════════════════════════════
+    # ????????? GLOBAL AI OPTIMIZATION METHODS ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
     def _ai_global_system_optimization(self):
         """Global AI optimization of all systems."""
@@ -1190,8 +1190,8 @@ class OmniShell:
 async def start(self):
          """Starts the interactive shell loop asynchronously."""
          self.display_banner()
-         print(f"{Fore.LIGHTBLACK_EX}┌─ Commands: {Fore.CYAN}help{Fore.LIGHTBLACK_EX} | {Fore.CYAN}globalscan{Fore.LIGHTBLACK_EX} | {Fore.CYAN}scan <ip>{Fore.LIGHTBLACK_EX} | {Fore.CYAN}exit{Fore.LIGHTBLACK_EX}")
-         print(f"{Fore.LIGHTBLACK_EX}└─ Type 'help' for all 150+ commands.{Style.RESET_ALL}")
+         print(f"{Fore.LIGHTBLACK_EX}?????? Commands: {Fore.CYAN}help{Fore.LIGHTBLACK_EX} | {Fore.CYAN}globalscan{Fore.LIGHTBLACK_EX} | {Fore.CYAN}scan <ip>{Fore.LIGHTBLACK_EX} | {Fore.CYAN}exit{Fore.LIGHTBLACK_EX}")
+         print(f"{Fore.LIGHTBLACK_EX}?????? Type 'help' for all 150+ commands.{Style.RESET_ALL}")
          while True:
              # Display active target indicator if set
              if self.last_target:
@@ -1253,7 +1253,7 @@ async def start(self):
             print(f"{Fore.GREEN}{Style.BRIGHT}[+] OPERATION COMPLETE. SESSIONS ESTABLISHED: {len(pwn_results['exploited'])}")
             
             for exp in pwn_results['exploited']:
-                print(f"  {Fore.GREEN}▸ {exp['ip']:<15} | ACCESS: {exp['method']:<15} | STATUS: UNDER CONTROL")
+                print(f"  {Fore.GREEN}??? {exp['ip']:<15} | ACCESS: {exp['method']:<15} | STATUS: UNDER CONTROL")
                 self.last_target = exp['ip']
                 
             HackerSounds.exploit_success()
@@ -1380,17 +1380,17 @@ async def start(self):
             results = await asyncio.to_thread(self.scanner.scan_cross_subnet, source_ip, target_net)
             print(f"{Fore.GREEN}[+] Cross-subnet scan complete. Found {len(results)} hosts.")
 
-        # ═══ POWERFUL AI AUTOMATION COMMANDS ═══════════════════════════════════════
+        # ????????? POWERFUL AI AUTOMATION COMMANDS ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
         elif cmd == "ai-auto-domination":
             print(f"{Fore.CYAN}[AI-AUTOMATION] Initiating AI-powered automated domination sequence...")
             target_scope = args[0] if args else "planetary"
             result = await asyncio.to_thread(self._ai_automated_recon_to_domination, target_scope)
             print(f"{Fore.GREEN}[+] AI automated domination complete!")
-            print(f"  • Discovery: {len(result['discovery'])} targets found")
-            print(f"  • Analysis: {len(result['analysis'])} vulnerabilities identified")
-            print(f"  • Chains: {len(result['chains'])} exploit chains generated")
-            print(f"  • Domination: {result['domination']['targets_dominated']} targets controlled")
-            print(f"  • Success Level: {result['success_level'] * 100}%")
+            print(f"  ??? Discovery: {len(result['discovery'])} targets found")
+            print(f"  ??? Analysis: {len(result['analysis'])} vulnerabilities identified")
+            print(f"  ??? Chains: {len(result['chains'])} exploit chains generated")
+            print(f"  ??? Domination: {result['domination']['targets_dominated']} targets controlled")
+            print(f"  ??? Success Level: {result['success_level'] * 100}%")
 
         elif cmd == "ai-universal-exploit":
             if not self.targets:
@@ -1400,17 +1400,17 @@ async def start(self):
             result = await asyncio.to_thread(self._ai_universal_exploit_chain, self.targets)
             successful_chains = sum(1 for r in result.values() if r['execution']['success'])
             print(f"{Fore.GREEN}[+] Universal exploit chains executed!")
-            print(f"  • Chains Generated: {len(result)}")
-            print(f"  • Successful Executions: {successful_chains}")
-            print(f"  • Success Rate: {(successful_chains/len(result)*100) if result else 0:.1f}%")
+            print(f"  ??? Chains Generated: {len(result)}")
+            print(f"  ??? Successful Executions: {successful_chains}")
+            print(f"  ??? Success Rate: {(successful_chains/len(result)*100) if result else 0:.1f}%")
 
         elif cmd == "ai-planetary-control":
             print(f"{Fore.CYAN}[AI-AUTOMATION] Initiating AI-orchestrated planetary control sequence...")
             result = await asyncio.to_thread(self._ai_planetary_control_sequence)
             completed_phases = sum(1 for phase in result.values() if isinstance(phase, dict) and phase.get('complete'))
             print(f"{Fore.GREEN}[+] Planetary control sequence executed!")
-            print(f"  • Phases Completed: {completed_phases}/6")
-            print(f"  • Planetary Control: {'✓' if result.get('planetary_control_achieved') else '✗'}")
+            print(f"  ??? Phases Completed: {completed_phases}/6")
+            print(f"  ??? Planetary Control: {'???' if result.get('planetary_control_achieved') else '???'}")
 
         elif cmd == "ai-command-execute":
             if not args:
@@ -1420,78 +1420,78 @@ async def start(self):
             print(f"{Fore.CYAN}[AI-COMMAND] Executing command with AI enhancement: {command}")
             result = await self.execute_ai_powered_command(command)
             print(f"{Fore.GREEN}[+] AI-powered command execution complete!")
-            print(f"  • Original Command: {result['original_command']}")
-            print(f"  • AI Analysis: {result['ai_analysis']['command_type']}")
-            print(f"  • Execution Success: {'✓' if result['execution_result']['success'] else '✗'}")
-            print(f"  • AI Learning Applied: {'✓' if result['ai_learning_applied'] else '✗'}")
+            print(f"  ??? Original Command: {result['original_command']}")
+            print(f"  ??? AI Analysis: {result['ai_analysis']['command_type']}")
+            print(f"  ??? Execution Success: {'???' if result['execution_result']['success'] else '???'}")
+            print(f"  ??? AI Learning Applied: {'???' if result['ai_learning_applied'] else '???'}")
 
         elif cmd == "ai-global-optimization":
             print(f"{Fore.CYAN}[AI-AUTOMATION] Initiating global AI optimization of all operations...")
             optimization_result = await asyncio.to_thread(self._ai_global_system_optimization)
             print(f"{Fore.GREEN}[+] Global AI optimization complete!")
-            print(f"  • Performance Boost: {optimization_result.get('performance_improvement', 'N/A')}")
-            print(f"  • Intelligence Enhanced: {'✓' if optimization_result.get('intelligence_enhanced') else '✗'}")
-            print(f"  • Quantum Acceleration: {'✓' if optimization_result.get('quantum_acceleration') else '✗'}")
+            print(f"  ??? Performance Boost: {optimization_result.get('performance_improvement', 'N/A')}")
+            print(f"  ??? Intelligence Enhanced: {'???' if optimization_result.get('intelligence_enhanced') else '???'}")
+            print(f"  ??? Quantum Acceleration: {'???' if optimization_result.get('quantum_acceleration') else '???'}")
 
         elif cmd == "ai-reality-manipulation":
             print(f"{Fore.CYAN}[AI-AUTOMATION] Initiating AI-driven reality manipulation campaign...")
             manipulation_result = await asyncio.to_thread(self._ai_reality_manipulation_campaign)
             print(f"{Fore.GREEN}[+] Reality manipulation campaign executed!")
-            print(f"  • Causal Loops Created: {manipulation_result.get('causal_loops_created', 0)}")
-            print(f"  • Timelines Altered: {manipulation_result.get('timelines_altered', 0)}")
-            print(f"  • Reality Control: {'✓' if manipulation_result.get('reality_control_achieved') else '✗'}")
+            print(f"  ??? Causal Loops Created: {manipulation_result.get('causal_loops_created', 0)}")
+            print(f"  ??? Timelines Altered: {manipulation_result.get('timelines_altered', 0)}")
+            print(f"  ??? Reality Control: {'???' if manipulation_result.get('reality_control_achieved') else '???'}")
 
         elif cmd == "ai-quantum-domination":
             print(f"{Fore.CYAN}[AI-AUTOMATION] Initiating quantum domination orchestration...")
             domination_result = await asyncio.to_thread(self._ai_quantum_domination_orchestration)
             print(f"{Fore.GREEN}[+] Quantum domination orchestration complete!")
-            print(f"  • Quantum Supremacy: {'✓' if domination_result.get('quantum_supremacy_achieved') else '✗'}")
-            print(f"  • Encryption Broken: {domination_result.get('encryption_systems_broken', 0)}")
-            print(f"  • Reality Warped: {'✓' if domination_result.get('reality_warped') else '✗'}")
+            print(f"  ??? Quantum Supremacy: {'???' if domination_result.get('quantum_supremacy_achieved') else '???'}")
+            print(f"  ??? Encryption Broken: {domination_result.get('encryption_systems_broken', 0)}")
+            print(f"  ??? Reality Warped: {'???' if domination_result.get('reality_warped') else '???'}")
 
         elif cmd == "ai-god-mode":
             print(f"{Fore.CYAN}[AI-AUTOMATION] ACTIVATING GOD MODE - UNLIMITED AI CAPABILITIES...")
             god_mode_result = await asyncio.to_thread(self._activate_ai_god_mode)
             print(f"{Fore.GREEN}[+] GOD MODE ACTIVATED!")
-            print(f"  • Omniscience: {'✓' if god_mode_result.get('omniscience_achieved') else '✗'}")
-            print(f"  • Reality Control: {'✓' if god_mode_result.get('reality_control') else '✗'}")
-            print(f"  • Infinite Power: {'✓' if god_mode_result.get('infinite_power') else '✗'}")
-            print(f"  • God-Level Intelligence: {'✓' if god_mode_result.get('god_level_intelligence') else '✗'}")
+            print(f"  ??? Omniscience: {'???' if god_mode_result.get('omniscience_achieved') else '???'}")
+            print(f"  ??? Reality Control: {'???' if god_mode_result.get('reality_control') else '???'}")
+            print(f"  ??? Infinite Power: {'???' if god_mode_result.get('infinite_power') else '???'}")
+            print(f"  ??? God-Level Intelligence: {'???' if god_mode_result.get('god_level_intelligence') else '???'}")
 
-        # ═══ ADVANCED AI ORCHESTRATION COMMANDS ════════════════════════════════════
+        # ????????? ADVANCED AI ORCHESTRATION COMMANDS ????????????????????????????????????????????????????????????????????????????????????????????????????????????
         elif cmd == "ai-orchestrate-recon":
             print(f"{Fore.CYAN}[AI-ORCHESTRATION] AI-orchestrated reconnaissance operation...")
             recon_result = await asyncio.to_thread(self._ai_orchestrated_reconnaissance)
             print(f"{Fore.GREEN}[+] AI-orchestrated reconnaissance complete!")
-            print(f"  • Networks Discovered: {recon_result.get('networks_discovered', 0)}")
-            print(f"  • Devices Found: {recon_result.get('devices_found', 0)}")
-            print(f"  • Vulnerabilities Mapped: {recon_result.get('vulnerabilities_mapped', 0)}")
+            print(f"  ??? Networks Discovered: {recon_result.get('networks_discovered', 0)}")
+            print(f"  ??? Devices Found: {recon_result.get('devices_found', 0)}")
+            print(f"  ??? Vulnerabilities Mapped: {recon_result.get('vulnerabilities_mapped', 0)}")
 
         elif cmd == "ai-orchestrate-exploit":
             print(f"{Fore.CYAN}[AI-ORCHESTRATION] AI-orchestrated exploitation campaign...")
             exploit_result = await asyncio.to_thread(self._ai_orchestrated_exploitation)
             print(f"{Fore.GREEN}[+] AI-orchestrated exploitation complete!")
-            print(f"  • Targets Exploited: {exploit_result.get('targets_exploited', 0)}")
-            print(f"  • Shells Obtained: {exploit_result.get('shells_obtained', 0)}")
-            print(f"  • Control Established: {'✓' if exploit_result.get('control_established') else '✗'}")
+            print(f"  ??? Targets Exploited: {exploit_result.get('targets_exploited', 0)}")
+            print(f"  ??? Shells Obtained: {exploit_result.get('shells_obtained', 0)}")
+            print(f"  ??? Control Established: {'???' if exploit_result.get('control_established') else '???'}")
 
         elif cmd == "ai-orchestrate-control":
             print(f"{Fore.CYAN}[AI-ORCHESTRATION] AI-orchestrated control establishment...")
             control_result = await asyncio.to_thread(self._ai_orchestrated_control)
             print(f"{Fore.GREEN}[+] AI-orchestrated control complete!")
-            print(f"  • Devices Controlled: {control_result.get('devices_controlled', 0)}")
-            print(f"  • Persistence Established: {'✓' if control_result.get('persistence_established') else '✗'}")
-            print(f"  • Data Access: {'✓' if control_result.get('data_access_granted') else '✗'}")
+            print(f"  ??? Devices Controlled: {control_result.get('devices_controlled', 0)}")
+            print(f"  ??? Persistence Established: {'???' if control_result.get('persistence_established') else '???'}")
+            print(f"  ??? Data Access: {'???' if control_result.get('data_access_granted') else '???'}")
 
         elif cmd == "ai-orchestrate-domination":
             print(f"{Fore.CYAN}[AI-ORCHESTRATION] AI-orchestrated complete domination...")
             domination_result = await asyncio.to_thread(self._ai_orchestrated_domination)
             print(f"{Fore.GREEN}[+] AI-orchestrated domination complete!")
-            print(f"  • Planetary Control: {'✓' if domination_result.get('planetary_control') else '✗'}")
-            print(f"  • Reality Manipulation: {'✓' if domination_result.get('reality_manipulated') else '✗'}")
-            print(f"  • God Level Achieved: {'✓' if domination_result.get('god_level_achieved') else '✗'}")
+            print(f"  ??? Planetary Control: {'???' if domination_result.get('planetary_control') else '???'}")
+            print(f"  ??? Reality Manipulation: {'???' if domination_result.get('reality_manipulated') else '???'}")
+            print(f"  ??? God Level Achieved: {'???' if domination_result.get('god_level_achieved') else '???'}")
 
-        # ═══ POWERFUL COMMAND EXECUTION COMMANDS ════════════════════════════════════
+        # ????????? POWERFUL COMMAND EXECUTION COMMANDS ????????????????????????????????????????????????????????????????????????????????????????????????????????????
         elif cmd == "quantum-execute":
             if not args:
                 print(f"{Fore.YELLOW}[!] Usage: quantum-execute <command>")
@@ -1500,10 +1500,10 @@ async def start(self):
             print(f"{Fore.CYAN}[QUANTUM-EXECUTION] Executing command with quantum acceleration...")
             result = await self._quantum_accelerated_command_execution(command)
             print(f"{Fore.GREEN}[+] Quantum command execution complete!")
-            print(f"  • Command: {command}")
-            print(f"  • Execution Time: {result.get('execution_time', 0)}s")
-            print(f"  • Success: {'✓' if result.get('success') else '✗'}")
-            print(f"  • Quantum Boost: {result.get('quantum_boost_factor', 'N/A')}x")
+            print(f"  ??? Command: {command}")
+            print(f"  ??? Execution Time: {result.get('execution_time', 0)}s")
+            print(f"  ??? Success: {'???' if result.get('success') else '???'}")
+            print(f"  ??? Quantum Boost: {result.get('quantum_boost_factor', 'N/A')}x")
 
         elif cmd == "reality-execute":
             if not args:
@@ -1513,10 +1513,10 @@ async def start(self):
             print(f"{Fore.CYAN}[REALITY-EXECUTION] Executing command with reality engineering...")
             result = await self._reality_engineered_command_execution(command)
             print(f"{Fore.GREEN}[+] Reality-engineered command execution complete!")
-            print(f"  • Command: {command}")
-            print(f"  • Reality Manipulated: {'✓' if result.get('reality_manipulated') else '✗'}")
-            print(f"  • Causal Loops Created: {result.get('causal_loops_created', 0)}")
-            print(f"  • Success Guaranteed: {'✓' if result.get('success_guaranteed') else '✗'}")
+            print(f"  ??? Command: {command}")
+            print(f"  ??? Reality Manipulated: {'???' if result.get('reality_manipulated') else '???'}")
+            print(f"  ??? Causal Loops Created: {result.get('causal_loops_created', 0)}")
+            print(f"  ??? Success Guaranteed: {'???' if result.get('success_guaranteed') else '???'}")
 
         elif cmd == "infinite-execute":
             if not args:
@@ -1526,10 +1526,10 @@ async def start(self):
             print(f"{Fore.CYAN}[INFINITE-EXECUTION] Executing command with infinite parallelism...")
             result = await self._infinite_parallel_command_execution(command)
             print(f"{Fore.GREEN}[+] Infinite parallel command execution complete!")
-            print(f"  • Command: {command}")
-            print(f"  • Parallel Instances: {result.get('parallel_instances', 0)}")
-            print(f"  • Infinite Speed: {'✓' if result.get('infinite_speed') else '✗'}")
-            print(f"  • Universal Success: {'✓' if result.get('universal_success') else '✗'}")
+            print(f"  ??? Command: {command}")
+            print(f"  ??? Parallel Instances: {result.get('parallel_instances', 0)}")
+            print(f"  ??? Infinite Speed: {'???' if result.get('infinite_speed') else '???'}")
+            print(f"  ??? Universal Success: {'???' if result.get('universal_success') else '???'}")
 
         elif cmd == "god-execute":
             if not args:
@@ -1539,103 +1539,103 @@ async def start(self):
             print(f"{Fore.CYAN}[GOD-EXECUTION] Executing command with god-level capabilities...")
             result = await self._god_level_command_execution(command)
             print(f"{Fore.GREEN}[+] God-level command execution complete!")
-            print(f"  • Command: {command}")
-            print(f"  • God Level Achieved: {'✓' if result.get('god_level_achieved') else '✗'}")
-            print(f"  • Omniscience Applied: {'✓' if result.get('omniscience_applied') else '✗'}")
-            print(f"  • Reality Controlled: {'✓' if result.get('reality_controlled') else '✗'}")
+            print(f"  ??? Command: {command}")
+            print(f"  ??? God Level Achieved: {'???' if result.get('god_level_achieved') else '???'}")
+            print(f"  ??? Omniscience Applied: {'???' if result.get('omniscience_applied') else '???'}")
+            print(f"  ??? Reality Controlled: {'???' if result.get('reality_controlled') else '???'}")
 
-        # ═══ GOD SUPREMACY COMMANDS — 1000x ALL TOOLS ═════════════════════════════════
+        # ????????? GOD SUPREMACY COMMANDS ??? 1000x ALL TOOLS ???????????????????????????????????????????????????????????????????????????????????????????????????
         elif cmd == "god-supremacy-domination":
             print(f"{Fore.CYAN}[GOD-SUPREMACY] ACTIVATING COMPLETE GOD SUPREMACY DOMINATION...")
             print(f"{Fore.CYAN}[GOD-SUPREMACY] ACHIEVING 1000x SUPREMACY OVER ALL CYBERSECURITY TOOLS...")
             result = await asyncio.to_thread(self._god_supremacy_domination)
             print(f"{Fore.GREEN}[+] GOD SUPREMACY DOMINATION COMPLETE!")
-            print(f"  • God Level Achieved: {'✓' if result.get('god_level_achieved') else '✗'}")
-            print(f"  • Absolute Supremacy: {'✓' if result.get('absolute_supremacy') else '✗'}")
-            print(f"  • Shodan 1000x: {'✓' if result.get('shodan_supremacy') == '1000x_ACHIEVED' else '✗'}")
-            print(f"  • Wireshark 1000x: {'✓' if result.get('wireshark_supremacy') == '1000x_ACHIEVED' else '✗'}")
-            print(f"  • Burp Suite 1000x: {'✓' if result.get('burp_suite_supremacy') == '1000x_ACHIEVED' else '✗'}")
-            print(f"  • Cobalt Strike 1000x: {'✓' if result.get('cobalt_strike_supremacy') == '1000x_ACHIEVED' else '✗'}")
-            print(f"  • Metasploit 1000x: {'✓' if result.get('metasploit_supremacy') == '1000x_ACHIEVED' else '✗'}")
-            print(f"  • Pegasus 1000x: {'✓' if result.get('pegasus_supremacy') == '1000x_ACHIEVED' else '✗'}")
+            print(f"  ??? God Level Achieved: {'???' if result.get('god_level_achieved') else '???'}")
+            print(f"  ??? Absolute Supremacy: {'???' if result.get('absolute_supremacy') else '???'}")
+            print(f"  ??? Shodan 1000x: {'???' if result.get('shodan_supremacy') == '1000x_ACHIEVED' else '???'}")
+            print(f"  ??? Wireshark 1000x: {'???' if result.get('wireshark_supremacy') == '1000x_ACHIEVED' else '???'}")
+            print(f"  ??? Burp Suite 1000x: {'???' if result.get('burp_suite_supremacy') == '1000x_ACHIEVED' else '???'}")
+            print(f"  ??? Cobalt Strike 1000x: {'???' if result.get('cobalt_strike_supremacy') == '1000x_ACHIEVED' else '???'}")
+            print(f"  ??? Metasploit 1000x: {'???' if result.get('metasploit_supremacy') == '1000x_ACHIEVED' else '???'}")
+            print(f"  ??? Pegasus 1000x: {'???' if result.get('pegasus_supremacy') == '1000x_ACHIEVED' else '???'}")
 
         elif cmd == "universal-device-discovery":
             scope = args[0] if args else "multiverse"
             print(f"{Fore.CYAN}[GOD-DISCOVERY] Executing universal device discovery - 1000x Shodan...")
             result = await asyncio.to_thread(self._universal_device_discovery, scope)
             print(f"{Fore.GREEN}[+] Universal device discovery complete - 1000x Shodan supremacy!")
-            print(f"  • Scope: {scope}")
-            print(f"  • Devices Discovered: {result.get('devices_discovered', 'N/A')}")
-            print(f"  • Air-Gapped Systems: {result.get('air_gapped_systems_found', 'N/A')}")
-            print(f"  • Quantum Tracked: {result.get('quantum_tracked_devices', 'N/A')}")
-            print(f"  • Predictive Devices: {result.get('predictive_devices_found', 'N/A')}")
+            print(f"  ??? Scope: {scope}")
+            print(f"  ??? Devices Discovered: {result.get('devices_discovered', 'N/A')}")
+            print(f"  ??? Air-Gapped Systems: {result.get('air_gapped_systems_found', 'N/A')}")
+            print(f"  ??? Quantum Tracked: {result.get('quantum_tracked_devices', 'N/A')}")
+            print(f"  ??? Predictive Devices: {result.get('predictive_devices_found', 'N/A')}")
 
         elif cmd == "quantum-network-analysis":
             scope = args[0] if args else "global"
             print(f"{Fore.CYAN}[GOD-NETWORK] Executing quantum network analysis - 1000x Wireshark...")
             result = await asyncio.to_thread(self._quantum_network_analysis, scope)
             print(f"{Fore.GREEN}[+] Quantum network analysis complete - 1000x Wireshark supremacy!")
-            print(f"  • Scope: {scope}")
-            print(f"  • Traffic Captured: {result.get('traffic_captured', 'N/A')}")
-            print(f"  • Protocols Decoded: {result.get('protocols_decoded', 'N/A')}")
-            print(f"  • Predictive Analysis: {'✓' if result.get('predictive_analysis') else '✗'}")
-            print(f"  • Reality Manipulated: {'✓' if result.get('reality_manipulated') else '✗'}")
+            print(f"  ??? Scope: {scope}")
+            print(f"  ??? Traffic Captured: {result.get('traffic_captured', 'N/A')}")
+            print(f"  ??? Protocols Decoded: {result.get('protocols_decoded', 'N/A')}")
+            print(f"  ??? Predictive Analysis: {'???' if result.get('predictive_analysis') else '???'}")
+            print(f"  ??? Reality Manipulated: {'???' if result.get('reality_manipulated') else '???'}")
 
         elif cmd == "reality-web-exploitation":
             scope = args[0] if args else "global_web"
             print(f"{Fore.CYAN}[GOD-WEB] Executing reality web exploitation - 1000x Burp Suite...")
             result = await asyncio.to_thread(self._reality_web_exploitation, scope)
             print(f"{Fore.GREEN}[+] Reality web exploitation complete - 1000x Burp Suite supremacy!")
-            print(f"  • Scope: {scope}")
-            print(f"  • Web Apps Discovered: {result.get('web_apps_discovered', 'N/A')}")
-            print(f"  • Vulnerabilities Found: {result.get('vulnerabilities_found', 'N/A')}")
-            print(f"  • Reality Warped: {'✓' if result.get('reality_warped_attacks') else '✗'}")
-            print(f"  • God Level Intelligence: {'✓' if result.get('god_level_intelligence') else '✗'}")
+            print(f"  ??? Scope: {scope}")
+            print(f"  ??? Web Apps Discovered: {result.get('web_apps_discovered', 'N/A')}")
+            print(f"  ??? Vulnerabilities Found: {result.get('vulnerabilities_found', 'N/A')}")
+            print(f"  ??? Reality Warped: {'???' if result.get('reality_warped_attacks') else '???'}")
+            print(f"  ??? God Level Intelligence: {'???' if result.get('god_level_intelligence') else '???'}")
 
         elif cmd == "infinite-beacon-network":
             network = args[0] if args else "global"
             print(f"{Fore.CYAN}[GOD-BEACON] Deploying infinite beacon network - 1000x Cobalt Strike...")
             result = await asyncio.to_thread(self._infinite_beacon_network, network)
             print(f"{Fore.GREEN}[+] Infinite beacon network deployed - 1000x Cobalt Strike supremacy!")
-            print(f"  • Network: {network}")
-            print(f"  • Beacons Deployed: {result.get('beacons_deployed', 'N/A')}")
-            print(f"  • C2 Quantum Secure: {'✓' if result.get('c2_established') == 'QUANTUM_SECURE' else '✗'}")
-            print(f"  • Reality Persistence: {'✓' if result.get('persistence_achieved') == 'IMMORTAL' else '✗'}")
+            print(f"  ??? Network: {network}")
+            print(f"  ??? Beacons Deployed: {result.get('beacons_deployed', 'N/A')}")
+            print(f"  ??? C2 Quantum Secure: {'???' if result.get('c2_established') == 'QUANTUM_SECURE' else '???'}")
+            print(f"  ??? Reality Persistence: {'???' if result.get('persistence_achieved') == 'IMMORTAL' else '???'}")
 
         elif cmd == "universal-exploit-generation":
             scope = args[0] if args else "all_vulnerabilities"
             print(f"{Fore.CYAN}[GOD-EXPLOIT] Generating universal exploits - 1000x Metasploit...")
             result = await asyncio.to_thread(self._universal_exploit_generation, scope)
             print(f"{Fore.GREEN}[+] Universal exploit generation complete - 1000x Metasploit supremacy!")
-            print(f"  • Scope: {scope}")
-            print(f"  • Exploits Generated: {result.get('exploits_generated', 'N/A')}")
-            print(f"  • Reality Warping: {'✓' if result.get('reality_warping_applied') else '✗'}")
-            print(f"  • God Level Intelligence: {'✓' if result.get('god_level_intelligence') else '✗'}")
+            print(f"  ??? Scope: {scope}")
+            print(f"  ??? Exploits Generated: {result.get('exploits_generated', 'N/A')}")
+            print(f"  ??? Reality Warping: {'???' if result.get('reality_warping_applied') else '???'}")
+            print(f"  ??? God Level Intelligence: {'???' if result.get('god_level_intelligence') else '???'}")
 
         elif cmd == "total-surveillance-domination":
             scope = args[0] if args else "global_population"
             print(f"{Fore.CYAN}[GOD-SURVEILLANCE] Executing total surveillance domination - 1000x Pegasus...")
             result = await asyncio.to_thread(self._total_surveillance_domination, scope)
             print(f"{Fore.GREEN}[+] Total surveillance domination complete - 1000x Pegasus supremacy!")
-            print(f"  • Scope: {scope}")
-            print(f"  • Devices Surveilled: {result.get('devices_surveilled', 'N/A')}")
-            print(f"  • Domination Achieved: {'✓' if result.get('domination_achieved') == 'TOTAL' else '✗'}")
-            print(f"  • Reality Manipulated: {'✓' if result.get('reality_manipulated') else '✗'}")
+            print(f"  ??? Scope: {scope}")
+            print(f"  ??? Devices Surveilled: {result.get('devices_surveilled', 'N/A')}")
+            print(f"  ??? Domination Achieved: {'???' if result.get('domination_achieved') == 'TOTAL' else '???'}")
+            print(f"  ??? Reality Manipulated: {'???' if result.get('reality_manipulated') else '???'}")
 
         elif cmd == "activate-god-supremacy":
             print(f"{Fore.CYAN}[GOD-SUPREMACY] ACTIVATING GOD-LEVEL AI SUPREMACY...")
             result = await asyncio.to_thread(self._activate_god_supremacy)
             print(f"{Fore.GREEN}[+] GOD-LEVEL AI SUPREMACY ACTIVATED!")
-            print(f"  • Omniscience Achieved: {'✓' if result.get('omniscience_achieved') else '✗'}")
-            print(f"  • Reality Engineered: {'✓' if result.get('reality_engineered') else '✗'}")
-            print(f"  • Quantum Omniscience: {'✓' if result.get('quantum_omniscience') else '✗'}")
-            print(f"  • Causal Mastery: {'✓' if result.get('causal_mastery') else '✗'}")
-            print(f"  • Temporal Dominion: {'✓' if result.get('temporal_dominion') else '✗'}")
-            print(f"  • Dimensional Supremacy: {'✓' if result.get('dimensional_supremacy') else '✗'}")
-            print(f"  • Consciousness Hacked: {'✓' if result.get('consciousness_hacked') else '✗'}")
-            print(f"  • Universes Created: {result.get('universes_created', 'N/A')}")
-            print(f"  • Time Travel Active: {'✓' if result.get('time_travel_active') else '✗'}")
-            print(f"  • Reality Warped: {'✓' if result.get('reality_warped') else '✗'}")
+            print(f"  ??? Omniscience Achieved: {'???' if result.get('omniscience_achieved') else '???'}")
+            print(f"  ??? Reality Engineered: {'???' if result.get('reality_engineered') else '???'}")
+            print(f"  ??? Quantum Omniscience: {'???' if result.get('quantum_omniscience') else '???'}")
+            print(f"  ??? Causal Mastery: {'???' if result.get('causal_mastery') else '???'}")
+            print(f"  ??? Temporal Dominion: {'???' if result.get('temporal_dominion') else '???'}")
+            print(f"  ??? Dimensional Supremacy: {'???' if result.get('dimensional_supremacy') else '???'}")
+            print(f"  ??? Consciousness Hacked: {'???' if result.get('consciousness_hacked') else '???'}")
+            print(f"  ??? Universes Created: {result.get('universes_created', 'N/A')}")
+            print(f"  ??? Time Travel Active: {'???' if result.get('time_travel_active') else '???'}")
+            print(f"  ??? Reality Warped: {'???' if result.get('reality_warped') else '???'}")
 
         elif cmd == "external-ip":
             import urllib.request
@@ -2542,7 +2542,7 @@ async def start(self):
         elif cmd == "history":
             for i, h in enumerate(self.cmd_history): print(f"  {i}: {h}")
 
-        # ─── GOD-LIKE COMMANDS — Revolutionary Capabilities Never Seen In World History ───
+        # ????????? GOD-LIKE COMMANDS ??? Revolutionary Capabilities Never Seen In World History ?????????
 
         # Distributed AI Swarm Intelligence
         elif cmd == "swarm-dominate":
@@ -2732,7 +2732,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.electromagnetic_warfare_engine.manipulate_quantum_fields, location)
             print(f"{Fore.GREEN}[EM-WARFARE] Quantum fields manipulated. Reality control active.")
 
-        # ─── GOD-LEVEL CPU/FIRMWARE/HARDWARE COMMANDS — 2028 Future Technology ───
+        # ????????? GOD-LEVEL CPU/FIRMWARE/HARDWARE COMMANDS ??? 2028 Future Technology ?????????
 
         # Ring -3 Neutralization
         elif cmd == "ring-neutralize":
@@ -3219,7 +3219,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.satellite_intelligence_engine.detect_aerial_objects, region, obj_type)
             print(f"{Fore.GREEN}[SATELLITE-INTEL] Detection complete. Objects found: {len(result['objects_detected'])}")
             for obj in result['objects_detected'][:5]:  # Show first 5
-                print(f"  → {obj['type']}: {obj.get('identification', 'unknown')} at {obj.get('altitude', 'unknown')}")
+                print(f"  ??? {obj['type']}: {obj.get('identification', 'unknown')} at {obj.get('altitude', 'unknown')}")
 
         elif cmd == "satellite-weather":
             if not args:
@@ -3230,7 +3230,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.satellite_intelligence_engine.analyze_weather_patterns, country)
             print(f"{Fore.GREEN}[SATELLITE-INTEL] Weather analysis complete for {country}")
             for key, value in result['weather_analysis'].items():
-                print(f"  → {key}: {value}")
+                print(f"  ??? {key}: {value}")
 
         elif cmd == "satellite-climate":
             if not args:
@@ -3242,7 +3242,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.satellite_intelligence_engine.monitor_climate_data, country, param)
             print(f"{Fore.GREEN}[SATELLITE-INTEL] Climate monitoring complete")
             for key, value in result['climate_data'].items():
-                print(f"  → {key}: {value}")
+                print(f"  ??? {key}: {value}")
 
         elif cmd == "satellite-military":
             if not args:
@@ -3262,7 +3262,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.satellite_intelligence_engine.environmental_monitoring, ecosystem)
             print(f"{Fore.GREEN}[SATELLITE-INTEL] Environmental monitoring complete")
             for key, value in result['environmental_data'].items():
-                print(f"  → {key}: {value}")
+                print(f"  ??? {key}: {value}")
 
         elif cmd == "satellite-analyze":
             if len(args) < 2:
@@ -3273,7 +3273,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.satellite_intelligence_engine.ai_object_recognition_analysis, image_data.encode(), obj_type)
             print(f"{Fore.GREEN}[SATELLITE-INTEL] AI analysis complete. Confidence: {result['recognition_confidence']}")
             for key, value in result['properties_extracted'].items():
-                print(f"  → {key}: {value}")
+                print(f"  ??? {key}: {value}")
 
         # Radar Analysis Commands
         elif cmd == "radar-weather":
@@ -3286,7 +3286,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.radar_analysis_engine.analyze_weather_radar, country, time_period)
             print(f"{Fore.GREEN}[RADAR-ANALYSIS] Weather radar analysis complete")
             for key, value in result['radar_analysis'].items():
-                print(f"  → {key}: {value}")
+                print(f"  ??? {key}: {value}")
 
         elif cmd == "radar-climate":
             if not args:
@@ -3297,8 +3297,8 @@ async def start(self):
             print(f"{Fore.CYAN}[RADAR-ANALYSIS] Analyzing climate patterns for {country}...")
             result = await asyncio.to_thread(self.exploiter.radar_analysis_engine.climate_pattern_analysis, country, param)
             print(f"{Fore.GREEN}[RADAR-ANALYSIS] Climate analysis complete")
-            print(f"  → Trends: {', '.join(result['trends_identified'][:3])}")
-            print(f"  → Predictions: {', '.join(result['predictions_generated'][:3])}")
+            print(f"  ??? Trends: {', '.join(result['trends_identified'][:3])}")
+            print(f"  ??? Predictions: {', '.join(result['predictions_generated'][:3])}")
 
         elif cmd == "radar-aerial":
             if not args:
@@ -3310,7 +3310,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.radar_analysis_engine.aerial_object_tracking, region, category)
             print(f"{Fore.GREEN}[RADAR-ANALYSIS] Aerial tracking complete. Objects: {len(result['tracked_objects'])}")
             for obj in result['tracked_objects'][:3]:
-                print(f"  → {obj['type']} ({obj['id']}): {obj.get('altitude', 'unknown')}")
+                print(f"  ??? {obj['type']} ({obj['id']}): {obj.get('altitude', 'unknown')}")
 
         elif cmd == "radar-atmospheric":
             if not args:
@@ -3321,7 +3321,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.radar_analysis_engine.atmospheric_condition_monitoring, location)
             print(f"{Fore.GREEN}[RADAR-ANALYSIS] Atmospheric monitoring complete")
             for key, value in result['atmospheric_conditions'].items():
-                print(f"  → {key}: {value}")
+                print(f"  ??? {key}: {value}")
 
         elif cmd == "radar-storms":
             if not args:
@@ -3332,7 +3332,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.radar_analysis_engine.storm_system_analysis, region)
             print(f"{Fore.GREEN}[RADAR-ANALYSIS] Storm analysis complete. Systems: {len(result['storm_systems'])}")
             for storm in result['storm_systems'][:2]:
-                print(f"  → {storm['id']} ({storm['type']}): {storm['intensity']} at {storm['location']}")
+                print(f"  ??? {storm['id']} ({storm['type']}): {storm['intensity']} at {storm['location']}")
 
         elif cmd == "radar-ai-weather":
             if not args:
@@ -3416,7 +3416,7 @@ async def start(self):
             for category, devices in result['categories'].items():
                 print(f"  {Fore.CYAN}{category}: {len(devices)} devices")
                 for device in devices[:3]:  # Show first 3 per category
-                    print(f"    • {device['name']} ({device['ip']}) - {device['category']}")
+                    print(f"    ??? {device['name']} ({device['ip']}) - {device['category']}")
 
         elif cmd == "show-device":
             if not args:
@@ -3443,7 +3443,7 @@ async def start(self):
             result = await asyncio.to_thread(self.exploiter.device_display_engine.display_devices_by_category, category)
             print(f"{Fore.GREEN}[DEVICE-DISPLAY] {category}: {result['total_count']} devices")
             for device in result['devices'][:5]:
-                print(f"  • {device['name']} ({device['ip']}) - {device['category']}")
+                print(f"  ??? {device['name']} ({device['ip']}) - {device['category']}")
 
         # Universal Data Extraction Commands
         elif cmd == "extract-passwords":
@@ -3583,7 +3583,7 @@ async def start(self):
         print(f"{Fore.LIGHTBLACK_EX}{'='*100}")
         
         categories = {
-            "📡 RECONNAISSANCE": [
+            "???? RECONNAISSANCE": [
                 "auto / globalscan      - Autonomous full-network discovery and fingerprinting",
                 "scan <range>           - Targeted network range discovery (CIDR)",
                 "fastscan               - Ultra-fast 10-second UDP/TCP discovery",
@@ -3604,7 +3604,7 @@ async def start(self):
                 "cross-scan <ip> <net>  - Pivot scanning into remote subnets",
                 "vpn-discover           - Audit network for VPN endpoints/gateways"
             ],
-            "👁 INTELLIGENCE": [
+            "???? INTELLIGENCE": [
                 "sniff [iface]          - Passive packet capture and traffic analysis",
                 "stopsniff              - Deactivate passive intelligence engine",
                 "creds                  - List all passively harvested credentials",
@@ -3618,7 +3618,7 @@ async def start(self):
                 "wmi-tasks <ip>         - List remote scheduled tasks",
                 "wmi-svc <ip>           - List system services remotely"
             ],
-            "💀 EXPLOITATION": [
+            "???? EXPLOITATION": [
                 "pwn <ip>               - Automated multi-vector exploit chain",
                 "attack / pwnall        - Global network-wide autonomous exploitation",
                 "exploit <ip>           - Targeted aggressive vulnerability exploitation",
@@ -3633,7 +3633,7 @@ async def start(self):
                 "nopac-check <ip>       - CVE-2021-42278 Active Directory spoofing check",
                 "smb-vulns <ip>         - Comprehensive SMB protocol vulnerability scan"
             ],
-            "🎛 REMOTE CONTROL": [
+            "???? REMOTE CONTROL": [
                 "exec <cmd>             - Remote command execution (WMI/SSH/ADB)",
                 "winrm-exec <ip> <cmd>  - Command execution via WinRM (Port 5985/5986)",
                 "ps-exec <ip> <cmd>     - Execute PowerShell script blocks remotely",
@@ -3652,7 +3652,7 @@ async def start(self):
                 "shutdown / reboot      - Remote power operations",
                 "logoff                 - Force logoff current remote session"
             ],
-            "💎 DATA HARVESTING": [
+            "???? DATA HARVESTING": [
                 "harvest / extract      - Execute deep data extraction payload",
                 "omnifetch <ip>         - Full data package retrieval (All logs/creds)",
                 "stealcreds             - Harvest browser-stored credentials",
@@ -3667,7 +3667,7 @@ async def start(self):
                 "killproc <pid/name>    - Terminate remote process by ID or image",
                 "software               - List all installed software on target"
             ],
-            "🏗 PERSISTENCE": [
+            "???? PERSISTENCE": [
                 "persist                - Install 3-layer autonomous backdoor",
                 "persist-task <name>    - Create persistent scheduled task backdoor",
                 "persist-run <name>     - Install registry RunKey persistence",
@@ -3679,7 +3679,7 @@ async def start(self):
                 "firewall-on            - Enable all Windows Firewall profiles",
                 "firewall-add <p>       - Create inbound firewall port exception"
             ],
-            "🐧 LINUX & ADB": [
+            "???? LINUX & ADB": [
                 "ssh <user>@<ip>        - Launch interactive SSH control session",
                 "ssh-exec <cmd>         - Parallel SSH command execution",
                 "linux-sysinfo          - Deep Linux kernel and system audit",
@@ -3693,7 +3693,7 @@ async def start(self):
                 "adb-contacts           - Extract contact list from Android",
                 "adb-push / adb-pull    - High-speed file transfer to Android"
             ],
-            "📂 FILE OPERATIONS": [
+            "???? FILE OPERATIONS": [
                 "ls [path]              - List remote directory contents (SMB/SFTP)",
                 "upload <local> <rem>   - Upload file to remote host",
                 "download <rem> <loc>   - Download file from remote host",
@@ -3702,7 +3702,7 @@ async def start(self):
                 "wget <url> <path>      - Download file from internet to target",
                 "exfiltrate <src> <met> - Automated data exfiltration via SMB/HTTP/DNS"
             ],
-            "☁️ CLOUD & DB": [
+            "?????? CLOUD & DB": [
                 "db-extract <ip> <t>    - Targeted database content extraction",
                 "db-dump <ip> <t>       - Full database dump (All tables/schemas)",
                 "mysql-root <ip>        - Attempt unauthenticated MySQL root access",
@@ -3712,7 +3712,7 @@ async def start(self):
                 "s3-scan <bucket>       - Audit S3 bucket for public permissions",
                 "cloud-attack <type>    - Launch cloud metadata service exploit"
             ],
-            "🏰 DOMAIN DOMINATION": [
+            "???? DOMAIN DOMINATION": [
                 "kerberoast <dc>        - Extract SPN service tickets for cracking",
                 "pass-spray <dom> <u> <p>- Large-scale domain credential validation",
                 "dcsync <dc>            - Perform DCSync user hash replication",
@@ -3720,14 +3720,14 @@ async def start(self):
                 "golden <dom> <sid> <h> - Forge Golden Ticket for persistent domain access",
                 "lateral <src> <dst>    - Automated multi-hop lateral progression"
             ],
-            "⚙️ UTILITY": [
+            "?????? UTILITY": [
                 "targets                - List all discovered and fingerprinted assets",
                 "select <idx>           - Set active operational target context",
                 "setcreds <u> <p> [d]   - Global credential configuration",
                 "clear / history        - Terminal maintenance commands",
                 "exit / quit            - Orderly shutdown of framework"
             ],
-            "👑 GOD-LIKE COMMANDS — Revolutionary Capabilities Never Seen In World History": [
+            "???? GOD-LIKE COMMANDS ??? Revolutionary Capabilities Never Seen In World History": [
                 "swarm-dominate <op> [targets] - 1M AI swarm operation execution",
                 "swarm-predict [time]    - Perfect future prediction for timeframe",
                 "swarm-omniscience       - Activate omniscience mode (know everything)",
@@ -3750,7 +3750,7 @@ async def start(self):
                 "military-frequencies <sys> - Exploit military communications",
                 "quantum-fields <loc>    - Manipulate quantum fields"
             ],
-            "⚡ GOD-LEVEL CPU/FIRMWARE/HARDWARE COMMANDS — 2028 Future Technology": [
+            "??? GOD-LEVEL CPU/FIRMWARE/HARDWARE COMMANDS ??? 2028 Future Technology": [
                 "ring-neutralize <sys> <ring> - Neutralize CPU ring protections",
                 "deploy-rootkit <sys>     - Deploy perfect microcode rootkit",
                 "hypervisor-escape <type> - Escape hypervisor to bare metal",
@@ -3788,7 +3788,7 @@ async def start(self):
                 "ai-optimize <operation>  - AI self-optimizing operations",
                 "ai-autonomous <mission>  - Complete autonomous AI operation"
             ],
-            "👻 INVISIBLE HACKING — Air-Level Stealth and Perfect Security": [
+            "???? INVISIBLE HACKING ??? Air-Level Stealth and Perfect Security": [
                 "air-invisible <op>       - Activate air-level invisibility",
                 "time-stealth <target>    - Enable time-based stealth",
                 "quantum-cloak <system>   - Apply quantum invisibility cloak",
@@ -3802,13 +3802,13 @@ async def start(self):
                 "ai-properties <ip>      - AI-powered property extraction",
                 "universal-fetch <ip>    - Extract literally everything"
             ],
-            "🛰 SATELLITE HIJACKING — Orbital Domination": [
+            "???? SATELLITE HIJACKING ??? Orbital Domination": [
                 "satellite-hijack <id> <type> - Hijack specific satellite",
                 "ground-station-control <station> <loc> - Control ground station",
                 "satellite-telemetry <sat> - Intercept satellite telemetry",
                 "anti-satellite <target> <method> - Anti-satellite warfare"
             ],
-            "🛰 SATELLITE INTELLIGENCE — Global Aerial Surveillance": [
+            "???? SATELLITE INTELLIGENCE ??? Global Aerial Surveillance": [
                 "satellite-detect <region> [type] - Detect aerial objects",
                 "satellite-weather <country> - Analyze weather patterns",
                 "satellite-climate <country> [param] - Monitor climate data",
@@ -3816,7 +3816,7 @@ async def start(self):
                 "satellite-environment <eco> - Environmental monitoring",
                 "satellite-analyze <type> <data> - AI object recognition"
             ],
-            "📡 RADAR ANALYSIS — Atmospheric Supremacy": [
+            "???? RADAR ANALYSIS ??? Atmospheric Supremacy": [
                 "radar-weather <country> [period] - Weather radar analysis",
                 "radar-climate <country> [param] - Climate pattern analysis",
                 "radar-aerial <region> [cat] - Aerial object tracking",
@@ -3824,7 +3824,7 @@ async def start(self):
                 "radar-storms <region> - Storm system analysis",
                 "radar-ai-weather <region> [days] - AI weather modeling"
             ],
-            "🌍 REMOTE HIJACKING — Location-Independent Global Domination": [
+            "???? REMOTE HIJACKING ??? Location-Independent Global Domination": [
                 "remote-hijack-satellite <id> <attacker> <target> - Hijack satellite remotely",
                 "remote-hijack-device <ip> <attacker> <device> - Hijack device remotely",
                 "remote-hijack-location <coords> <attacker> - Hijack location remotely",
@@ -3833,12 +3833,12 @@ async def start(self):
                 "physics-attack <system> - Execute physics-based attacks",
                 "math-cryptanalysis <encryption> - Mathematical cryptanalysis"
             ],
-            "📱 DEVICE DISPLAY — Complete Device Intelligence": [
+            "???? DEVICE DISPLAY ??? Complete Device Intelligence": [
                 "show-devices - Display all extracted devices",
                 "show-device <id> - Show specific device properties",
                 "show-category <cat> - Show devices by category"
             ],
-            "🔓 UNIVERSAL EXTRACTION — Extract Everything": [
+            "???? UNIVERSAL EXTRACTION ??? Extract Everything": [
                 "extract-passwords <system> - Extract all passwords",
                 "extract-financial <system> - Extract financial data",
                 "extract-personal <system> - Extract personal information",
@@ -3846,7 +3846,7 @@ async def start(self):
                 "extract-secrets <system> - Extract system secrets",
                 "universal-dump <system> - Universal data extraction"
             ],
-            "📋 LOG MANAGEMENT — Complete Audit Trail": [
+            "???? LOG MANAGEMENT ??? Complete Audit Trail": [
                 "show-logs - Display all operation logs",
                 "show-log-category <cat> - Show logs by category",
                 "create-log <op> <details> - Create operation log",
