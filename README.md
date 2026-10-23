@@ -1,65 +1,91 @@
-# OMNISEC / OMNISCIENCE
+# OMNISEC — Defensive Exposure Assessment
 
-A Python security-assessment codebase under hardening. The repository historically described capabilities such as “100+ real exploits,” payload generation, remote control, and device takeover. Those claims were not substantiated by the code inspected: several routines treated a reachable port as proof of a CVE, and some routines returned success without performing the claimed operation.
+OMNISEC is currently maintained as a **scope-bound, non-invasive defensive assessment tool**. The legacy repository advertised autonomous exploitation, credential collection, remote command execution, persistence, and device takeover; source review found misleading success claims and hard-coded credential tests. Those legacy offensive paths have been retired from the first-party application entry points.
 
-This branch prioritizes **truthful results, safe defensive assessment, scope enforcement, tests, and reproducible quality gates**. It does not claim that the entire legacy codebase is production-ready.
+This is a functioning defensive assessment workflow, **not a claim that the whole historical repository is production-certified**.
 
-## Supported in this branch
+## Supported functionality
 
-### Scope-bound TCP exposure assessment
+### CLI: real TCP reachability
 
-The supported entry point is now `main.py`, which delegates to the same tested defensive assessment CLI. The legacy autonomous exploit/scanner launcher is not used by the primary entry point.
+The supported command performs actual TCP connection attempts against a list of explicit IP addresses, checks that every address is inside an explicitly supplied CIDR, validates the complete request before network I/O, and writes a JSON report from the actual socket observations. It never expands a subnet automatically.
 
-`safe_assessment.py` provides non-invasive TCP reachability checks against explicitly supplied IP addresses inside an explicitly supplied CIDR. It does not expand an entire CIDR into targets automatically.
+Requirements: Python 3.10 or later. The supported CLI uses only the Python standard library.
 
 ```bash
+python main.py --help
 python main.py --authorized-scope 192.168.1.0/24 --target 192.168.1.10 --ports 22,80,443,445 --output report.json
 ```
 
-You can also run `python safe_assessment.py` directly. Repeat `--target` for additional IP addresses. Use only systems you own or are explicitly authorized to assess.
+Repeat `--target` to add more explicit IPs. Each request is limited to 128 targets, 128 ports, and 2,048 target/port probes, with at most 32 concurrent connection workers and a per-connection timeout from 0.1 to 5 seconds. These are guardrails, not authorization; assess only systems in your written scope.
 
-Reports use observations such as `open`, `closed_or_filtered`, and `error`. An open port is **not** reported as a vulnerability, and a timeout does not distinguish filtering from a closed service.
+The report uses `open`, `closed_or_filtered`, or `error` observations. A successful TCP handshake is not proof of the service identity, a CVE, weak authentication, or compromise. No credentials are tested and no remote commands or changes are made.
 
-### Fail-closed legacy command center
+### Desktop UI: `gui.py`
 
-The legacy command center no longer imports missing `payloads` or `remote_control_engine` modules at startup. Offensive exploit execution, payload generation, and remote-control providers are replaced with an explicit disabled adapter. Unsupported calls return `status: unsupported` and `success: false`; they do not claim that an action was performed. The command center displays this restricted mode when it starts.
+Run `python gui.py` on a desktop environment with Tkinter. The UI is wired to the same assessment functions as the CLI: it validates the scope and explicit target list, performs real TCP checks on a worker thread, displays the resulting JSON report, and exports the actual report through a save dialog. It does not show fabricated device lists or fake successful results. If Tkinter is unavailable or the environment is headless, use the CLI.
 
-### Corrected legacy checks
+### Interactive command center: `command_center.py`
 
-Several legacy methods now report service reachability as inconclusive rather than claiming EternalBlue, BlueKeep, Zerologon, PrintNightmare, WinRM execution, or PetitPotam success based only on a TCP connection. The SMB relay stub explicitly reports that the operation is unsupported instead of returning fabricated success.
+Run `python command_center.py` to use the console, or `python live_command.py`. Use these commands:
 
-### Automated quality checks
+- `scope 192.168.1.0/24` — register the authorized scope.
+- `target 192.168.1.10` — add one explicit IP inside the scope.
+- `targets` — list registered targets.
+- `ports 22,80,443` — configure TCP ports.
+- `timeout 1.0` — configure the bounded timeout.
+- `assess` — run the real checks and print an evidence-based JSON report.
+- `exit` — leave the console.
 
-GitHub Actions runs Python bytecode compilation and the standard-library unit tests on pushes to this branch and pull requests targeting `master`.
+Legacy commands for exploitation, payload generation, packet-based credential collection, remote control, persistence, and lateral movement return an explicit unsupported status or are retired. Their failure is not reported as successful operation.
+
+## Tests and CI
+
+The GitHub Actions workflow compiles all **first-party Python source files** outside `.local/` and the vendored `impacket_src/` tree, then runs the deterministic standard-library tests:
 
 ```bash
-python -m py_compile main.py safe_assessment.py safe_feature_guard.py command_center.py exploitation_techniques.py
 python -m unittest discover -s tests -v
 ```
 
-The compilation command above checks only the supported defensive entry points. The full legacy repository is **not yet syntax-clean**: older files including `omnisec_engine.py` contain known parse errors, so the current passing CI run must not be interpreted as a successful audit of every file. Those legacy engines remain out of the supported path and require separate remediation before production use.
+For the same first-party syntax check locally, run:
 
-## Important limitations
+```bash
+python - <<'PY'
+from pathlib import Path
+import sys
 
-- This branch does **not** implement or claim to implement real exploitation, payload delivery, credential theft, persistence, stealth, remote device takeover, Android surveillance, or industrial-control operations.
-- Legacy modules outside the hardened path may still contain unsafe or incomplete behavior. Do not run them against third-party systems or production infrastructure.
-- Optional dependencies, OS-specific utilities, and third-party protocols have not all been validated on every supported platform.
-- CI results must be observed on GitHub; a workflow file being present is not evidence that a run passed.
-- A successful TCP connection is service exposure evidence only. CVE verification requires reliable protocol-level checks, authenticated configuration/patch evidence, or a trusted scanner.
+excluded_parts = {".git", ".local", "impacket_src", "__pycache__"}
+files = [
+    path for path in Path(".").rglob("*.py")
+    if not any(part in excluded_parts for part in path.parts)
+]
+errors = []
+for path in sorted(files):
+    try:
+        compile(path.read_text(encoding="utf-8"), str(path), "exec")
+    except (OSError, UnicodeError, SyntaxError) as exc:
+        errors.append(f"{path}: {exc}")
+if errors:
+    print("\n".join(errors), file=sys.stderr)
+    raise SystemExit(1)
+print(f"Successfully compiled {len(files)} first-party Python files.")
+PY
+```
 
-## Security and authorization
+Tests use mocks only to verify boundary/error behavior deterministically; the application workflow itself uses actual TCP sockets and actual file export. Test success is not equivalent to a security certification or proof of behavior on every operating system.
 
-Only assess assets within a written authorization scope. Prefer a staging environment first. Keep reports access-controlled because they may reveal internal network structure. Review all legacy commands before enabling them in an operational environment.
+## Repository boundary and remaining limitations
 
-## Roadmap
+- The top-level legacy application modules that previously provided exploit, remote-control, credential-collection, and unscoped scanning paths have been replaced with fail-closed compatibility shims or safe launchers.
+- `impacket_src/` is a vendored third-party project with its own example utilities. It is outside OMNISEC's supported runtime, is excluded from OMNISEC's first-party CI check, and has **not** been audited as part of this change. Do not run its example scripts as part of this application.
+- This Python project does not currently provide a native Android/iOS client. The old `mobile_gui.py` entry point clearly states that limitation rather than simulating a mobile app.
+- The supported assessment does not perform protocol-level CVE checks, authenticated configuration review, TLS certificate evaluation, service fingerprinting, or remediation. Those should be separate, well-scoped features with their own verified implementations and tests.
+- Avoid committing real assessment reports or operational logs to version control; they can disclose internal asset information and can be mistaken for verified evidence.
 
-1. Inventory all entry points, imports, and dependencies.
-2. Replace misleading “success” booleans with typed outcomes and evidence.
-3. Add tests for each supported defensive check and error path.
-4. Isolate unsupported legacy attack functionality behind explicit disabled status.
-5. Add dependency pinning, static analysis, secret scanning, and signed releases.
-6. Expand only with documented, non-destructive checks that can be verified by tests.
+## Authorization
+
+Only assess assets covered by written authorization. Start with a small allowlisted target set, protect exported reports, and do not infer vulnerability or compromise from port reachability alone.
 
 ## Project status
 
-**Hardening in progress — not yet production-certified.** The project should not be described as fully functional or production-ready until the full codebase has been audited, tests pass in CI, security review is complete, and platform-specific behavior is verified.
+**Defensive hardening in progress.** The supported CLI, console, and desktop assessment path is being tested in CI. The broader third-party/vendor tree and platform-specific behavior have not been certified for production.
