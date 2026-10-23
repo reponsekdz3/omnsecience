@@ -8,13 +8,15 @@ This branch prioritizes **truthful results, safe defensive assessment, scope enf
 
 ### Scope-bound TCP exposure assessment
 
+The supported entry point is now `main.py`, which delegates to the same tested defensive assessment CLI. The legacy autonomous exploit/scanner launcher is not used by the primary entry point.
+
 `safe_assessment.py` provides non-invasive TCP reachability checks against explicitly supplied IP addresses inside an explicitly supplied CIDR. It does not expand an entire CIDR into targets automatically.
 
 ```bash
-python safe_assessment.py --authorized-scope 192.168.1.0/24 --target 192.168.1.10 --ports 22,80,443,445 --output report.json
+python main.py --authorized-scope 192.168.1.0/24 --target 192.168.1.10 --ports 22,80,443,445 --output report.json
 ```
 
-Repeat `--target` for additional IP addresses. Use only systems you own or are explicitly authorized to assess.
+You can also run `python safe_assessment.py` directly. Repeat `--target` for additional IP addresses. Use only systems you own or are explicitly authorized to assess.
 
 Reports use observations such as `open`, `closed_or_filtered`, and `error`. An open port is **not** reported as a vulnerability, and a timeout does not distinguish filtering from a closed service.
 
