@@ -1,11 +1,2 @@
-scapy
-paramiko
-requests
-cryptography
-colorama
-netifaces
-pymysql
-psycopg2-binary
-pymongo
-redis
-dnspython
+# No third-party packages are required for the supported defensive CLI.
+# Tkinter is part of many Python distributions; some Linux distributions package it separately.
