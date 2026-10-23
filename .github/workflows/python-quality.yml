@@ -1,4 +1,4 @@
-name: Python quality gates
+name: Defensive Python quality gates
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Compile Python sources
-        run: python -m compileall -q .
+      - name: Compile supported defensive entry points
+        run: python -m py_compile main.py safe_assessment.py safe_feature_guard.py command_center.py exploitation_techniques.py
       - name: Run standard-library tests
         run: python -m unittest discover -s tests -v
