@@ -79,6 +79,18 @@ class PortAssessmentTests(unittest.TestCase):
         connect.assert_not_called()
 
     @patch("safe_assessment.socket.create_connection")
+    def test_probe_limit_rejects_request_before_network_io(self, connect):
+        targets = [f"10.0.0.{n}" for n in range(1, 33)]
+        ports = list(range(1, 66))  # 32 targets x 65 ports exceeds the request cap.
+        with self.assertRaisesRegex(ValueError, "limit each request"):
+            assess_targets(
+                targets,
+                ipaddress.ip_network("10.0.0.0/24"),
+                ports,
+            )
+        connect.assert_not_called()
+
+    @patch("safe_assessment.socket.create_connection")
     def test_duplicate_ports_are_checked_once(self, connect):
         connect.return_value.__enter__.return_value = object()
         results = assess_targets(
