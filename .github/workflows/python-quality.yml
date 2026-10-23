@@ -36,7 +36,7 @@ jobs:
               except (OSError, UnicodeError, SyntaxError) as exc:
                   errors.append(f"{path}: {exc}")
           if errors:
-              print("\\n".join(errors), file=sys.stderr)
+              print("\n".join(errors), file=sys.stderr)
               raise SystemExit(1)
           print(f"Successfully compiled {len(files)} first-party Python files.")
           PY
