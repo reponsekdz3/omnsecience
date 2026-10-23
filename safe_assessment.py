@@ -44,12 +44,30 @@ def validate_target(target: str, scope: ipaddress.IPv4Network | ipaddress.IPv6Ne
     return str(address)
 
 
+def validate_ports(ports: Sequence[int]) -> tuple[int, ...]:
+    """Validate and de-duplicate all requested TCP ports before connecting."""
+    if not ports:
+        raise ValueError("Provide at least one port")
+    normalized: list[int] = []
+    for port in ports:
+        if type(port) is not int or not 1 <= port <= 65535:
+            raise ValueError("Every port must be an integer between 1 and 65535")
+        if port not in normalized:
+            normalized.append(port)
+    return tuple(normalized)
+
+
+def validate_timeout(timeout: float) -> float:
+    """Keep each connection timeout bounded and reject booleans/non-numbers."""
+    if isinstance(timeout, bool) or not isinstance(timeout, (int, float)) or not 0.1 <= timeout <= 5.0:
+        raise ValueError("Timeout must be a number between 0.1 and 5 seconds")
+    return float(timeout)
+
+
 def assess_tcp_port(host: str, port: int, timeout: float = 1.0) -> PortObservation:
     """Record only TCP reachability; an open port is not proof of vulnerability."""
-    if not 1 <= port <= 65535:
-        raise ValueError("Port must be between 1 and 65535")
-    if not 0.1 <= timeout <= 5.0:
-        raise ValueError("Timeout must be between 0.1 and 5 seconds")
+    port = validate_ports((port,))[0]
+    timeout = validate_timeout(timeout)
     try:
         with socket.create_connection((host, port), timeout=timeout):
             return PortObservation(
@@ -72,14 +90,18 @@ def assess_targets(
     timeout: float = 1.0,
 ) -> list[PortObservation]:
     """Assess explicit IPs inside the authorized scope; no CIDR-wide expansion."""
-    normalized = [validate_target(target, scope) for target in targets]
+    normalized = list(dict.fromkeys(validate_target(target, scope) for target in targets))
     if not normalized:
         raise ValueError("Provide at least one explicit target IP")
-    if len(set(normalized)) != len(normalized):
-        normalized = list(dict.fromkeys(normalized))
-    if not ports:
-        raise ValueError("Provide at least one port")
-    return [assess_tcp_port(host, port, timeout) for host in normalized for port in ports]
+    validated_ports = validate_ports(ports)
+    validated_timeout = validate_timeout(timeout)
+    # Validate the complete request before the first socket connection, avoiding
+    # partial network scans when a later port or timeout is invalid.
+    return [
+        assess_tcp_port(host, port, validated_timeout)
+        for host in normalized
+        for port in validated_ports
+    ]
 
 
 def main(argv: Sequence[str] | None = None) -> int:
