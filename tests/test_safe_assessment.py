@@ -44,6 +44,27 @@ class PortAssessmentTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             assess_tcp_port("127.0.0.1", 80, timeout=30)
 
+    @patch("safe_assessment.socket.create_connection")
+    def test_invalid_later_port_fails_before_any_network_io(self, connect):
+        with self.assertRaises(ValueError):
+            assess_targets(
+                ["192.168.1.10"],
+                ipaddress.ip_network("192.168.1.0/24"),
+                [80, 70000],
+            )
+        connect.assert_not_called()
+
+    @patch("safe_assessment.socket.create_connection")
+    def test_duplicate_ports_are_checked_once(self, connect):
+        connect.return_value.__enter__.return_value = object()
+        results = assess_targets(
+            ["192.168.1.10"],
+            ipaddress.ip_network("192.168.1.0/24"),
+            [80, 80],
+        )
+        self.assertEqual(len(results), 1)
+        connect.assert_called_once()
+
 
 if __name__ == "__main__":
     unittest.main()
