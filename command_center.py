@@ -172,33 +172,11 @@ Type 'help <command>' for detailed information about a command.
     
     def do_autoexploit(self, arg):
         """
-        Automatically exploit target with all techniques
-        Usage: autoexploit [target]
+        Disabled by design: automated exploitation is unsafe and unreliable.
+        Use 'assess <ip> --scope <cidr>' for a non-invasive, scope-bound exposure check.
         """
-        target = arg if arg else self.current_target
-        
-        if not target:
-            print(f"{Fore.RED}No target specified{Style.RESET_ALL}")
-            return
-        
-        print(f"{Fore.CYAN}[*] Running auto-exploitation against {target}...{Style.RESET_ALL}")
-        
-        techniques = self.exploits.get_all_techniques()
-        success_count = 0
-        
-        for technique in techniques:
-            method = getattr(self.exploits, technique)
-            try:
-                result = method(target)
-                if result.get("success"):
-                    success_count += 1
-                    print(f"{Fore.GREEN}[+] {technique}: SUCCESS{Style.RESET_ALL}")
-                    self.compromised_devices[target] = result
-                    break  # Stop on first success
-            except:
-                continue
-        
-        print(f"{Fore.CYAN}[*] Auto-exploitation complete: {success_count} successful{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}[!] Auto-exploitation is disabled. Port reachability is not proof of a vulnerability, and automated exploit chaining can damage systems.{Style.RESET_ALL}")
+        print(f"{Fore.CYAN}[*] Use the scope-bound defensive assessment command or an authorized vulnerability scanner.{Style.RESET_ALL}")
     
     # ═══════════════════════════════════════════════════════════════════
     # ADVANCED EXPLOITATION COMMANDS
