@@ -18,6 +18,10 @@ Repeat `--target` for additional IP addresses. Use only systems you own or are e
 
 Reports use observations such as `open`, `closed_or_filtered`, and `error`. An open port is **not** reported as a vulnerability, and a timeout does not distinguish filtering from a closed service.
 
+### Fail-closed legacy command center
+
+The legacy command center no longer imports missing `payloads` or `remote_control_engine` modules at startup. Offensive exploit execution, payload generation, and remote-control providers are replaced with an explicit disabled adapter. Unsupported calls return `status: unsupported` and `success: false`; they do not claim that an action was performed. The command center displays this restricted mode when it starts.
+
 ### Corrected legacy checks
 
 Several legacy methods now report service reachability as inconclusive rather than claiming EternalBlue, BlueKeep, Zerologon, PrintNightmare, WinRM execution, or PetitPotam success based only on a TCP connection. The SMB relay stub explicitly reports that the operation is unsupported instead of returning fabricated success.
