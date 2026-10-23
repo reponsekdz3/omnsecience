@@ -64,8 +64,17 @@ def validate_timeout(timeout: float) -> float:
     return float(timeout)
 
 
-def assess_tcp_port(host: str, port: int, timeout: float = 1.0) -> PortObservation:
-    """Record only TCP reachability; an open port is not proof of vulnerability."""
+def assess_tcp_port(
+    host: str,
+    port: int,
+    timeout: float = 1.0,
+    *,
+    scope: ipaddress.IPv4Network | ipaddress.IPv6Network | None = None,
+) -> PortObservation:
+    """Record TCP reachability for an IP covered by an explicit authorized scope."""
+    if scope is None:
+        raise ValueError("An explicit authorized CIDR scope is required")
+    host = validate_target(host, scope)
     port = validate_ports((port,))[0]
     timeout = validate_timeout(timeout)
     try:
@@ -98,7 +107,7 @@ def assess_targets(
     # Validate the complete request before the first socket connection, avoiding
     # partial network scans when a later port or timeout is invalid.
     return [
-        assess_tcp_port(host, port, validated_timeout)
+        assess_tcp_port(host, port, validated_timeout, scope=scope)
         for host in normalized
         for port in validated_ports
     ]
