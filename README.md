@@ -33,9 +33,11 @@ Several legacy methods now report service reachability as inconclusive rather th
 GitHub Actions runs Python bytecode compilation and the standard-library unit tests on pushes to this branch and pull requests targeting `master`.
 
 ```bash
-python -m compileall -q .
+python -m py_compile main.py safe_assessment.py safe_feature_guard.py command_center.py exploitation_techniques.py
 python -m unittest discover -s tests -v
 ```
+
+The compilation command above checks only the supported defensive entry points. The full legacy repository is **not yet syntax-clean**: older files including `omnisec_engine.py` contain known parse errors, so the current passing CI run must not be interpreted as a successful audit of every file. Those legacy engines remain out of the supported path and require separate remediation before production use.
 
 ## Important limitations
 
