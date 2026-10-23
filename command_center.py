@@ -22,10 +22,14 @@ except:
     class Style:
         RESET_ALL = ""
 
-from exploitation_techniques import ExploitationTechniques
-from payloads import PayloadGenerator
-from remote_control_engine import RemoteControlEngine
+from safe_feature_guard import DisabledFeatureProvider
 from live_scanner_display import LiveNetworkScanner
+
+# Offensive legacy modules are not wired into this defensive command center.
+# Missing historical imports no longer prevent safe inventory/scanning startup.
+ExploitationTechniques = lambda: DisabledFeatureProvider("exploit execution")
+PayloadGenerator = lambda: DisabledFeatureProvider("payload generation")
+RemoteControlEngine = lambda: DisabledFeatureProvider("remote control")
 
 
 class OmniSecCommandCenter(cmd.Cmd):
@@ -60,7 +64,7 @@ Type 'help <command>' for detailed information about a command.
         self.current_target = None
         self.current_session = None
         
-        print(f"{Fore.GREEN}[+] All engines initialized successfully{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}[+] Defensive scanner initialized{Style.RESET_ALL}")\n        print(f"{Fore.YELLOW}[!] Exploit execution, payload generation, and remote control are disabled in this build.{Style.RESET_ALL}")
     
     # ═══════════════════════════════════════════════════════════════════
     # NETWORK SCANNING COMMANDS
