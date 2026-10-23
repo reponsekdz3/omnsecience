@@ -10,11 +10,16 @@ import argparse
 import ipaddress
 import json
 import socket
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from typing import Iterable, Sequence
 
 DEFAULT_PORTS = (22, 80, 443, 445, 3389, 5985, 5986)
+MAX_TARGETS = 128
+MAX_PORTS = 128
+MAX_PROBES = 2048
+MAX_WORKERS = 32
 
 
 @dataclass(frozen=True)
@@ -48,6 +53,8 @@ def validate_ports(ports: Sequence[int]) -> tuple[int, ...]:
     """Validate and de-duplicate all requested TCP ports before connecting."""
     if not ports:
         raise ValueError("Provide at least one port")
+    if len(ports) > MAX_PORTS:
+        raise ValueError(f"Limit each assessment to {MAX_PORTS} distinct TCP ports")
     normalized: list[int] = []
     for port in ports:
         if type(port) is not int or not 1 <= port <= 65535:
@@ -102,15 +109,32 @@ def assess_targets(
     normalized = list(dict.fromkeys(validate_target(target, scope) for target in targets))
     if not normalized:
         raise ValueError("Provide at least one explicit target IP")
+    if len(normalized) > MAX_TARGETS:
+        raise ValueError(f"Limit each assessment to {MAX_TARGETS} explicit targets")
     validated_ports = validate_ports(ports)
     validated_timeout = validate_timeout(timeout)
-    # Validate the complete request before the first socket connection, avoiding
-    # partial network scans when a later port or timeout is invalid.
-    return [
-        assess_tcp_port(host, port, validated_timeout, scope=scope)
+    probe_count = len(normalized) * len(validated_ports)
+    if probe_count > MAX_PROBES:
+        raise ValueError(
+            f"Assessment would require {probe_count} connections; limit each request to {MAX_PROBES} probes"
+        )
+
+    # Validate the complete request before the first socket connection. A bounded
+    # worker pool makes assessments responsive without creating unbounded threads.
+    jobs = [
+        (host, port)
         for host in normalized
         for port in validated_ports
     ]
+    observations: list[PortObservation | None] = [None] * len(jobs)
+    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(jobs))) as executor:
+        future_indexes = {
+            executor.submit(assess_tcp_port, host, port, validated_timeout, scope=scope): index
+            for index, (host, port) in enumerate(jobs)
+        }
+        for future in as_completed(future_indexes):
+            observations[future_indexes[future]] = future.result()
+    return [item for item in observations if item is not None]
 
 
 def main(argv: Sequence[str] | None = None) -> int:
