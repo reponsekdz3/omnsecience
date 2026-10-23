@@ -64,7 +64,8 @@ Type 'help <command>' for detailed information about a command.
         self.current_target = None
         self.current_session = None
         
-        print(f"{Fore.GREEN}[+] Defensive scanner initialized{Style.RESET_ALL}")\n        print(f"{Fore.YELLOW}[!] Exploit execution, payload generation, and remote control are disabled in this build.{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}[+] Defensive scanner initialized{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}[!] Exploit execution, payload generation, and remote control are disabled in this build.{Style.RESET_ALL}")
     
     # ═══════════════════════════════════════════════════════════════════
     # NETWORK SCANNING COMMANDS
