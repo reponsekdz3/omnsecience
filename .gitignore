@@ -1,0 +1,14 @@
+# Python build artifacts and local runtime output
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Local assessment artifacts contain sensitive network details
+*.log
+report.json
+omnisec-assessment.json
+scan_results*.json

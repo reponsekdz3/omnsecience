@@ -1,0 +1,44 @@
+name: Defensive Python quality gates
+
+on:
+  push:
+    branches: [master, "hardening/**"]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile all first-party Python sources
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          excluded_parts = {".git", ".local", "impacket_src", "__pycache__"}
+          files = [
+              path for path in Path(".").rglob("*.py")
+              if not any(part in excluded_parts for part in path.parts)
+          ]
+          errors = []
+          for path in sorted(files):
+              try:
+                  source = path.read_text(encoding="utf-8")
+                  compile(source, str(path), "exec")
+              except (OSError, UnicodeError, SyntaxError) as exc:
+                  errors.append(f"{path}: {exc}")
+          if errors:
+              print("\n".join(errors), file=sys.stderr)
+              raise SystemExit(1)
+          print(f"Successfully compiled {len(files)} first-party Python files.")
+          PY
+      - name: Run deterministic unit tests
+        run: python -m unittest discover -s tests -v
