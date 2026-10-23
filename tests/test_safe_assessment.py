@@ -31,18 +31,42 @@ class PortAssessmentTests(unittest.TestCase):
     @patch("safe_assessment.socket.create_connection")
     def test_open_port_is_not_reported_as_vulnerability(self, connect):
         connect.return_value.__enter__.return_value = object()
-        result = assess_tcp_port("192.168.1.10", 445)
+        result = assess_tcp_port(
+            "192.168.1.10", 445,
+            scope=ipaddress.ip_network("192.168.1.0/24"),
+        )
         self.assertEqual(result.state, "open")
         self.assertIn("vulnerability are unverified", result.evidence)
         self.assertEqual(result.service_hint, "smb")
 
     def test_rejects_invalid_port(self):
         with self.assertRaises(ValueError):
-            assess_tcp_port("127.0.0.1", 70000)
+            assess_tcp_port(
+                "127.0.0.1", 70000,
+                scope=ipaddress.ip_network("127.0.0.0/8"),
+            )
 
     def test_rejects_unsafe_timeout(self):
         with self.assertRaises(ValueError):
-            assess_tcp_port("127.0.0.1", 80, timeout=30)
+            assess_tcp_port(
+                "127.0.0.1", 80, timeout=30,
+                scope=ipaddress.ip_network("127.0.0.0/8"),
+            )
+
+    @patch("safe_assessment.socket.create_connection")
+    def test_direct_port_check_requires_scope(self, connect):
+        with self.assertRaisesRegex(ValueError, "authorized CIDR scope"):
+            assess_tcp_port("192.168.1.10", 80)
+        connect.assert_not_called()
+
+    @patch("safe_assessment.socket.create_connection")
+    def test_direct_port_check_rejects_out_of_scope_target(self, connect):
+        with self.assertRaisesRegex(ValueError, "outside authorized scope"):
+            assess_tcp_port(
+                "192.168.2.10", 80,
+                scope=ipaddress.ip_network("192.168.1.0/24"),
+            )
+        connect.assert_not_called()
 
     @patch("safe_assessment.socket.create_connection")
     def test_invalid_later_port_fails_before_any_network_io(self, connect):
