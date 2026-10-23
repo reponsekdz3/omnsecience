@@ -41,3 +41,28 @@ class DisabledFeatureProvider:
                 "error": "This operation is disabled in the defensive build; no remote action was performed.",
             }
         return unsupported
+
+
+
+class DisabledLegacyEngine(DisabledFeatureProvider):
+    """Compatibility base for retired legacy exploit/control modules.
+
+    Constructors accept historical arguments so importing old call sites does
+    not accidentally execute network actions. All dynamic operations inherit
+    the fail-closed result from DisabledFeatureProvider.
+    """
+
+    FEATURE_NAME = "legacy operation"
+
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        super().__init__(self.FEATURE_NAME)
+
+
+def disabled_cli(feature_name: str) -> int:
+    """Explain why a retired legacy executable does not perform remote actions."""
+    print(
+        f"{feature_name} is disabled in this defensive build. "
+        "No remote action was performed. Use 'python main.py --help' for the "
+        "supported, scope-bound assessment workflow."
+    )
+    return 2
